@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shader.frag</file>
+        <file>shader.vert</file>
+        <file>Zhejiang_University_Logo.png</file>
+    </qresource>
+</RCC>
