@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CG-Project1</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+		<style>
+			body {
+				background-color: #999;
+			}
+		</style>
+	</head>
+	<body>
+
+		<script src="js/libs/jszip.min.js"></script>
+
+		<script type="module">
+			import * as THREE from '../build/three.module.js';
+			import { OrbitControls } from './jsm/controls/OrbitControls.js';
+			import { AMFLoader } from './jsm/loaders/AMFLoader.js';
+			import { TeapotBufferGeometry } from './jsm/geometries/TeapotBufferGeometry.js';
+			import { OBJLoader } from './jsm/loaders/OBJLoader.js';
+			import {MTLLoader} from './jsm/loaders/MTLLoader.js';
+
+			var camera, scene, renderer;
+			init();
+			function init() {
+				scene = new THREE.Scene();
+				scene.background = new THREE.Color( 0x999999 );
+				// scene.add( new THREE.AmbientLight( 0x404040 ) );
+				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 500 );
+				// Z is up for objects intended to be 3D printed.
+				camera.up.set( 0, 0, 1 );
+				camera.position.set( 0, - 9, 6 );
+				// camera.add( new THREE.PointLight( 0xffffff, 0.8 ) );
+				scene.add( camera );
+
+				var planeGeometry = new THREE.PlaneBufferGeometry( 20, 20, 32, 32 );
+				var planeMaterial = new THREE.MeshStandardMaterial( { color: 0x00ff00 } )
+				var plane = new THREE.Mesh( planeGeometry, planeMaterial );
+				plane.receiveShadow = true;
+				scene.add( plane );
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.shadowMap.enabled = true;
+				renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+				document.body.appendChild( renderer.domElement );
+
+				// ----------------------------------------
+				var geometry = new THREE.BoxGeometry( 3, 3, 3 );
+				var texture = new THREE.TextureLoader().load( "textures/brick_diffuse.jpg" );
+				var material = new THREE.MeshBasicMaterial({map: texture});
+				var cube = new THREE.Mesh( geometry, material );
+				cube.castShadow = true;
+				scene.add( cube );
+				cube.position.set(5, 5, 1.5);
+
+				// ----------------------------------------
+				var teapot = new TeapotBufferGeometry( 15, 18 );
+				var cloud = new THREE.TextureLoader().load("textures/cloud.png");
+				var cloud_material = new THREE.MeshBasicMaterial({map : cloud});
+				var teapot_mesh = new THREE.Mesh( teapot, cloud_material );
+				teapot_mesh.castShadow = true;
+				scene.add( teapot_mesh );
+				teapot_mesh.position.set(-5,-5,1.5);
+				teapot_mesh.scale.set(0.1,0.1,0.1);
+				teapot_mesh.rotation.x = Math.PI / 2;
+
+				// ----------------------------------------
+				var mtlLoader = new MTLLoader();
+				var url1 = 'models/bmw/bmw.mtl';
+				mtlLoader.load(url1, function(materials){
+					materials.preload();
+					var objLoader = new OBJLoader();
+					objLoader.setMaterials(materials);
+					var url2 = 'models/bmw/bmw.obj';
+					objLoader.load(url2, function(object){
+						object.position.set(5, -5, 0);
+						object.scale.set(0.01, 0.01, 0.01);
+						object.rotation.x = Math.PI / 2;
+						object.traverse(function(child){
+						if(child instanceof THREE.Mesh){
+							child.castShadow = true;
+						}
+					})
+						scene.add(object);
+					});
+				});
+
+				// ----------------------------------------
+				var bunny_obj_loader = new OBJLoader();
+				bunny_obj_loader.load('models/bunny/bunny.obj', function(object){
+					object.position.set(-5, 5, 0);
+					object.rotation.x = Math.PI/2;
+					object.scale.set(2, 2, 2);
+					object.traverse(function(child){
+						if(child instanceof THREE.Mesh){
+							child.castShadow = true;
+						}
+					})
+					scene.add(object);
+				})
+
+				// ----------------------------------------
+				var loader = new AMFLoader();
+				loader.load( './models/rook/rook.amf', function ( amfobject ) {
+					amfobject.traverse(function(child){
+						if(child instanceof THREE.Mesh){
+							child.castShadow = true;
+						}
+					})
+					scene.add( amfobject );
+				} );
+
+				// ----------------------------------------
+				var spotLight = new THREE.SpotLight( 0xffffff );
+				spotLight.position.set( 0, 0, 15 );
+				spotLight.castShadow = true;
+				scene.add( spotLight );
+				spotLight.shadow.mapSize.width = 512;
+				spotLight.shadow.mapSize.height = 512;
+				spotLight.shadow.camera.near = 0.5;
+				spotLight.shadow.camera.far = 500;
+				var spotLightHelper = new THREE.SpotLightHelper(spotLight);
+				scene.add(spotLightHelper);
+				
+
+				var controls = new OrbitControls( camera, renderer.domElement );
+				controls.addEventListener( 'change', render );
+				controls.target.set( 0, 1.2, 2 );
+				controls.update();
+				window.addEventListener( 'resize', onWindowResize, false );
+			}
+			function onWindowResize() {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				render();
+			}
+			function render() {
+				renderer.render( scene, camera );
+			}
+		</script>
+	</body>
+</html>
