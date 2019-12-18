@@ -1,0 +1,10 @@
+﻿  main.cpp
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(223): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(311): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(312): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(316): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(317): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(319): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(320): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\zju\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\hw_01\project_01\project_01\main.cpp(328): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Project_01.vcxproj -> E:\ZJU\三维动画与交互技术_李启雷\graphics2019\21951423曾志通\HW_01\Project_01\Debug\Project_01.exe
