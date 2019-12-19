@@ -14,6 +14,7 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+//void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 void processInput(GLFWwindow* window);
 unsigned int loadTexture(const char* path);
 
@@ -31,6 +32,21 @@ bool firstMouse = true;
 float lastFrame = 0.0f; // time of last frame
 float deltaTime = 0.0f; // time between current frame and last frame
 
+/**** ROTATE IT ****/
+int rotateFlag[6]; // TO-DO: Later, i will hash the 27 small cubes to a 3x3x3 matrix, and apply rotation on the this matrix to simply the logic of position and cube entities.
+// dim:		0 - Left;  1 - Right;  2 - Down;  3 - Up;  4 - Back;  5 - Front;
+// value:	-1 - CW;  0 - Static;  1 - CCW;
+bool isRotating = false; // This boolean variable plays a role of semaphore. When the magic cube is rotating, it must be locked.
+int maxSteps = 150, stepsOfRotation = 0;
+int directionOfRotation;
+int phaseOfRotation = 0;
+
+bool shiftLock = false;
+// DAMN! This shitLock method is ugly... and it isn't bug-free obviously.
+// The usual way to detect a MUTLIPLE-KEY-PRESS failed when the keys is 'R' and 'Shift' because the life of a frame is to short.
+// And it isn't bug-free obviously, but just CURRENTLY.
+/*******************/
+
 int main() {
 	// glfw: initialize and configure
 	// ------------------------------
@@ -45,7 +61,7 @@ int main() {
 
 	// glfw window creation
 	// --------------------
-	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "HW_01", NULL, NULL);
 	if (window == NULL) {
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();
@@ -55,6 +71,7 @@ int main() {
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	glfwSetCursorPosCallback(window, mouse_callback);
 	glfwSetScrollCallback(window, scroll_callback);
+	//glfwSetKeyCallback(window, key_callback);
 
 	// Tell GLFW to capture our mouse(the cursor will be hidden)
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -245,6 +262,23 @@ int main() {
 		ourShader.setMat4("view", view);
 
 		// Render the Rubik's Cube
+		
+		/**** ROTATE IT ****/
+		float rotAngle = 0.0f;
+		if (isRotating) {
+			++stepsOfRotation;
+			rotAngle = glm::radians(90.0f * (phaseOfRotation + stepsOfRotation * 1.0 / maxSteps * directionOfRotation));
+			if (stepsOfRotation == maxSteps) {
+				stepsOfRotation = 0;
+				isRotating = false;
+				phaseOfRotation = (phaseOfRotation + directionOfRotation) % 4; // + 1 * direction
+				shiftLock = false; // hey, i am here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			}
+		} else {
+			rotAngle = glm::radians(90.0f * phaseOfRotation);
+		}
+		/*******************/
+
 		for (unsigned int i = 0; i < 27; ++i) {
 			for (unsigned int j = 0; j < 6; ++j) {
 
@@ -252,6 +286,13 @@ int main() {
 
 				glBindVertexArray(VAOs[j]);
 				glm::mat4 model = glm::mat4(1.0f);
+
+				/**** ROTATE IT ****/
+				if (i / 9 == 2) {
+					model = glm::rotate(model, rotAngle, glm::vec3(1.0f, 0.0f, 0.0f));
+				}
+				/*******************/
+
 				model = glm::translate(model, cubePositions[i]);
 				model = glm::scale(model, glm::vec3(1 / 3.0f));
 				ourShader.setMat4("model", model);
@@ -294,6 +335,24 @@ void processInput(GLFWwindow* window) {
 		camera.ProcessKeyboard(LEFT, deltaTime);
 	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
 		camera.ProcessKeyboard(RIGHT, deltaTime);
+
+
+	if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS && !shiftLock) {
+		shiftLock = true;
+		//std::cout << "LEFT_SHIFT" << std::endl;
+	}
+	if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS && !isRotating) {
+		isRotating = true;
+		//directionOfRotation = 1;
+		directionOfRotation = shiftLock ? -1 : 1;
+		//shiftLock = false;
+	}
+
+	//if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS && glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS && !isRotating) {
+	//	isRotating = true;
+	//	directionOfRotation = -1;
+	//}
+
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
@@ -364,3 +423,7 @@ unsigned int loadTexture(const char* path) {
 
 	return textureID;
 }
+
+//void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+//
+//}
