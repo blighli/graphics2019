@@ -17,3 +17,4 @@
 * [Learn OpenGL](http://learnopengl.com/)
 ## Demo
 ![image](https://github.com/zzzTooo/graphics2019/blob/master/21951423%E6%9B%BE%E5%BF%97%E9%80%9A/HW_01/DEMOs/Demo_01_v10.gif)
+![image](https://github.com/zzzTooo/graphics2019/blob/master/21951423%E6%9B%BE%E5%BF%97%E9%80%9A/HW_01/DEMOs/Demo_01_v11.gif)
