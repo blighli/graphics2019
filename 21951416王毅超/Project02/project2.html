@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>H2 - 自转-公转 </title>
+    <!-- <script src="./clock.js"></script> -->
+    <script type="text/javascript" src="./js/three.js"></script>
+    <!-- <script type="text/javascript" src="../libs/VTKLoader.js"></script> -->
+    <script type="text/javascript" src="./js/TGALoader.js"></script>
+   <!--  轨迹球控制器，最常用的控制器，使之在页面中可以拖拽，转动，放松。 -->
+    <script type="text/javascript" src="./js/TrackballControls.js"></script>
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <script type="text/javascript" src="./js/stats.min.js"></script>
+    <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            margin: 0;
+            overflow: hidden;
+        }
+        /*html{ 
+            touch-action: none; 
+         }*/
+         #Stats-output{
+            position: absolute;
+            top:20px;
+            right: 20px;
+            background-color: orange;
+            opacity: 1;
+            padding: 10px 20px 10px 20px;
+            font-size: 25px;
+            color: white
+            /*text-decoration-color: white;*/
+
+         }
+    </style>
+</head>
+<body>
+<div id="Stats-output">点击天体
+</div>
+<div id="WebGL-output">
+</div>
+
+<!-- Javascript code that runs our Three.js examples -->
+<script type="text/javascript">
+
+    // once everything is loaded, we run our Three.js stuff.
+    function init() {
+
+        // var stats = initStats();
+        
+        var scene = new THREE.Scene();
+
+        // scene = new THREE.Scene();
+        // scene.background = new THREE.Color().setHSL( 0.6, 0, 1 );
+        // scene.fog = new THREE.Fog( scene.background, 1, 5000 );
+        // Fog( color : Integer, near : Float, far : Float )
+        // scene.fog = new THREE.Fog( 0xcce0ff, 60, 600 );
+
+        // create a camera, which defines where we're looking at.
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 5000);
+        camera.position.x = 0;
+        camera.position.y = 10;
+        camera.position.z = 300;
+        camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+
+        // create a render and set the size
+        var webGLRenderer = new THREE.WebGLRenderer({ antialias: true });
+        // 有点像设置背景的颜色
+        // webGLRenderer.setClearColor(new THREE.Color(0xffffff, 1.0));
+        webGLRenderer.setSize(window.innerWidth, window.innerHeight);
+        webGLRenderer.shadowMapEnabled = true;
+        
+
+        // 控制旋转
+        var trackballControls = new THREE.TrackballControls(camera);
+        trackballControls.rotateSpeed = 1.0;
+        trackballControls.zoomSpeed = 1.0;
+        trackballControls.panSpeed = 1.0;
+        trackballControls.staticMoving = true;
+
+        // 光照-全局光
+        // var ambientLight = new THREE.AmbientLight(0x666666);
+        // scene.add(ambientLight);
+
+        // add spotlight for the shadows
+        // var spotLight = new THREE.SpotLight(0xffffff);
+        // spotLight.position.set(0, 0, 300);
+        // spotLight.intensity = 1;
+        // spotLight.castShadow = true;
+        // scene.add(spotLight);
+
+        // 添加周边环境光，从天空颜色到地面颜色渐变
+        // hemiLight = new THREE.HemisphereLight( 0xddeeff, 0xffffff, 0.6 );
+        // scene.add( hemiLight );
+
+        // add the output of the renderer to the html element
+        document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
+        
+        // 添加太阳发光体：
+        var geomSun= new THREE.SphereGeometry(60, 120, 120);
+        let sunLight = new THREE.PointLight( 0xffee88, 3, 5000, 2 );
+        let loader = new THREE.TGALoader();
+        let sunTexture = loader.load('./textures/sunmap.tga');
+
+        var sunMaterial = new THREE.MeshStandardMaterial( {
+                    emissive: 0xffee88,
+                    emissiveIntensity: 0.7,
+                    emissiveMap:sunTexture,
+                    color: 0x000000
+                } );
+        sunLight.add( new THREE.Mesh( geomSun, sunMaterial ) );
+        sunLight.position.set( 0, 0, 0 );
+        sunLight.castShadow = true;
+        scene.add( sunLight );
+
+        // sunMaterial.map = sunTexture;
+        // var sphereSun = new THREE.Mesh(geomSun, sunMaterial);
+        // sphereSun.position.x = 0;
+        // sphereSun.castShadow = true;
+        // scene.add(sphereSun);
+
+        // // 添加网格
+        // var gridHelper = new THREE.GridHelper( 1600, 80, 0x808080, 0x808080 );
+        // gridHelper.position.y = -70;
+        // gridHelper.position.x = 0;
+        // scene.add( gridHelper );
+
+        // 添加平面
+        var planeGeometry = new THREE.PlaneGeometry(1000, 1000, 1, 1);
+        var planeMaterial = new THREE.MeshLambertMaterial({color: 0xffffff});
+        var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+        plane.receiveShadow = true;
+        plane.rotation.x = -0.5 * Math.PI;
+        plane.position.x = 0;
+        plane.position.y = -60;
+        plane.position.z = 0;
+        scene.add(plane);
+
+
+        
+        // // 添加太阳：
+        // var geomSun= new THREE.SphereGeometry(30, 60, 60);
+        // let loader = new THREE.TGALoader();
+        // let sunTexture = loader.load('./textures/sunmap.tga');
+        // var sunMaterial = new THREE.MeshLambertMaterial();
+        // sunMaterial.map = sunTexture;
+        // var sphereSun = new THREE.Mesh(geomSun, sunMaterial);
+        // sphereSun.position.x = 0;
+        // sphereSun.castShadow = true;
+        // scene.add(sphereSun);
+
+        // 添加地球：
+        var geomEarth= new THREE.SphereGeometry(20, 40, 40);
+        let earthTexture = loader.load('./textures/earthmap.tga');
+        var earthMaterial = new THREE.MeshLambertMaterial();
+        earthMaterial.map = earthTexture;
+        var sphereEarth = new THREE.Mesh(geomEarth, earthMaterial);
+        sphereEarth.position.x = 150;
+        sphereEarth.castShadow = true;
+        scene.add(sphereEarth);
+
+        // 添加月球：
+        var geomMoon = new THREE.SphereGeometry(10, 20, 20);
+        let moonTexture = loader.load('./textures/moonmap.tga');
+        var moonMaterial = new THREE.MeshLambertMaterial();
+        moonMaterial.map = moonTexture;
+        var sphereMoon = new THREE.Mesh(geomMoon, moonMaterial);
+        sphereMoon.position.x = 200;
+        sphereMoon.castShadow = true;
+        scene.add(sphereMoon);
+
+        //添加事件显示：
+        var raycaster = new THREE.Raycaster();
+        var mouse = new THREE.Vector2();
+        window.addEventListener( 'click', onDocumentMouseClick, false );
+        function onDocumentMouseClick( event ) {
+            // 下面这个是阻止事件冒泡吗？
+            event.preventDefault();
+            mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+            mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+            raycaster.setFromCamera( mouse, camera );
+            var intersects = raycaster.intersectObjects( [sphereEarth ,sunLight, sphereMoon],true);
+            console.log("children",intersects.length);
+            if ( intersects.length > 0 ) {
+                let info='';
+                for(let i=0;i<intersects.length;i++){
+                    let singleInfo;
+                    var object = intersects[i].object;
+                    console.log("object",object,[sphereEarth, sunLight.children[0] , sphereMoon]);
+                    switch(object){
+                        case sphereEarth:
+                            console.log("地球");
+                            singleInfo = "地球"
+                            break;
+                        case sunLight.children[0]:
+                            console.log("太阳");
+                            singleInfo = "太阳"
+                            break;
+                        case sphereMoon:
+                            console.log("月球");
+                            singleInfo = "月球"
+                            break;
+                    }
+                    // render();
+                    info+="/"+singleInfo+" ";
+                }
+                
+                showElementsName(info);
+            }
+        }
+
+        // 控制自转、公转速度
+        var earthStep = 0;
+        var moonStep = 0;
+        var controls = new function () {
+            this.sunRotationSpeed = 0.02;
+            this.earthRotationSpeed = 0.02;
+            this.moonRotationSpeed = 0.04;
+            this.earthBouncingSpeed = 0.005;
+            this.moonBouncingSpeed = 0.02;
+        };
+
+        // var gui = new dat.GUI();
+        // gui.add(controls, 'sunRotationSpeed', 0, 0.5);
+        // gui.add(controls, 'earthRotationSpeed', 0, 0.5);
+        // gui.add(controls, 'moonRotationSpeed', 0, 0.5);
+        // gui.add(controls, 'earthBouncingSpeed', 0, 0.9);
+        // gui.add(controls, 'moonBouncingSpeed', 0, 0.9);
+        var Axis = new THREE.Vector3( 1, 4, 0 );
+        var nAxis = Axis.normalize();
+        console.log("axis",Axis,nAxis);
+        render();
+        function render() {
+
+            // 太阳发光体自转
+            sunLight.rotateOnAxis(nAxis,0.04);
+            // sunLight.rotation.y += controls.sunRotationSpeed;
+            console.log();
+            // 地球自转 sphereEarth
+            // sphereEarth.rotation.y += controls.earthRotationSpeed;
+            sphereEarth.rotateOnAxis(nAxis,0.05);
+
+            // 地球公转 sphereEarth
+            earthStep += controls.earthBouncingSpeed;
+            sphereEarth.position.x = 150 * (Math.cos(earthStep));
+            sphereEarth.position.z = 150 * (Math.sin(earthStep));
+
+            // 月球自转 sphereMoon
+            sphereMoon.rotation.y += controls.moonBouncingSpeed;
+
+            // 月球公转 sphereMoon
+            moonStep += controls.moonBouncingSpeed;
+            sphereMoon.position.x = sphereEarth.position.x + 50 * (Math.cos(moonStep));
+            sphereMoon.position.z = sphereEarth.position.z + 50 * (Math.sin(moonStep));
+
+            trackballControls.update();
+            // gui.update();
+            webGLRenderer.clear();
+            // render using requestAnimationFrame
+            webGLRenderer.render(scene, camera)
+            requestAnimationFrame(render);
+        }
+        
+        let showSquare = document.getElementById("Stats-output");
+        function showElementsName(str) {
+            showSquare.innerHTML = "从近到远点击物品为： "+str;
+            setTimeout(function(){
+                showSquare.innerHTML = "点击天体";
+            },2000)
+        }
+
+        // function initStats() {
+        //     var stats = new Stats();
+        //     stats.setMode(0); // 0: fps, 1: ms
+        //     // Align top-left
+        //     stats.domElement.style.position = 'absolute';
+        //     stats.domElement.style.left = '0px';
+        //     stats.domElement.style.top = '0px';
+        //     document.getElementById("Stats-output").appendChild(stats.domElement);
+        //     return stats;
+        // }
+    }
+    window.onload = init;
+</script>
+</body>
+</html>
