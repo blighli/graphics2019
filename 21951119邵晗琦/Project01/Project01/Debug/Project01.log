@@ -1,0 +1,12 @@
+﻿  main.cpp
+c:\users\administrator\source\repos\project01\project01\main.cpp(167): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\project01\project01\main.cpp(138): warning C4101: “texture2”: 未引用的局部变量
+c:\users\administrator\source\repos\project01\project01\main.cpp(230): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\project01\project01\main.cpp(231): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\project01\project01\main.cpp(234): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\project01\project01\main.cpp(235): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\project01\project01\main.cpp(236): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\project01\project01\main.cpp(237): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\source\repos\project01\project01\main.cpp(238): warning C4305: “初始化”: 从“double”到“float”截断
+c:\users\administrator\source\repos\project01\project01\main.cpp(257): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+  Project01.vcxproj -> C:\Users\Administrator\source\repos\Project01\Debug\Project01.exe

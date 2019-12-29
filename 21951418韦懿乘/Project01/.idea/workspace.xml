@@ -1,0 +1,1580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="render-engine" targetName="test-core_func_packing" />
+      <config projectName="render-engine" targetName="test-gtc_type_precision" />
+      <config projectName="render-engine" targetName="test-gtc_reciprocal" />
+      <config projectName="render-engine" targetName="test-gtx_rotate_vector" />
+      <config projectName="render-engine" targetName="test-ext_scalar_uint_sized" />
+      <config projectName="render-engine" targetName="test-gtx_type_trait" />
+      <config projectName="render-engine" targetName="test-core_setup_force_cxx98" />
+      <config projectName="render-engine" targetName="test-gtc_type_aligned" />
+      <config projectName="render-engine" targetName="stb_image" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_operation" />
+      <config projectName="render-engine" targetName="test-ext_scalar_common" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_cross_product" />
+      <config projectName="render-engine" targetName="test-gtx_handed_coordinate_space" />
+      <config projectName="render-engine" targetName="test-gtx_normalize_dot" />
+      <config projectName="render-engine" targetName="test-gtx" />
+      <config projectName="render-engine" targetName="test-ext_vector_common" />
+      <config projectName="render-engine" targetName="test-gtc_vec1" />
+      <config projectName="render-engine" targetName="test-core_func_exponential" />
+      <config projectName="render-engine" targetName="test-core_func_swizzle" />
+      <config projectName="render-engine" targetName="test-gtx_fast_exponential" />
+      <config projectName="render-engine" targetName="test-gtx_extended_min_max" />
+      <config projectName="render-engine" targetName="test-gtx_integer" />
+      <config projectName="render-engine" targetName="test-perf_matrix_transpose" />
+      <config projectName="render-engine" targetName="test-gtx_color_space_YCoCg" />
+      <config projectName="render-engine" targetName="test-gtc_matrix_transform" />
+      <config projectName="render-engine" targetName="test-gtx_gradient_paint" />
+      <config projectName="render-engine" targetName="test-gtx_type_aligned" />
+      <config projectName="render-engine" targetName="test-perf_matrix_inverse" />
+      <config projectName="render-engine" targetName="test-gtx_quaternion" />
+      <config projectName="render-engine" targetName="test-gtx_vector_query" />
+      <config projectName="render-engine" targetName="test-core_setup_platform_unknown" />
+      <config projectName="render-engine" targetName="test-ext_vec1" />
+      <config projectName="render-engine" targetName="test-gtx_color_encoding" />
+      <config projectName="render-engine" targetName="engine" />
+      <config projectName="render-engine" targetName="test-core_func_integer_find_msb" />
+      <config projectName="render-engine" targetName="glad" />
+      <config projectName="render-engine" targetName="test-perf_matrix_mul_vector" />
+      <config projectName="render-engine" targetName="test-gtx_load" />
+      <config projectName="render-engine" targetName="glm_static" />
+      <config projectName="render-engine" targetName="test-core_type_mat3x3" />
+      <config projectName="render-engine" targetName="test-core_type_mat3x2" />
+      <config projectName="render-engine" targetName="test-core_type_mat3x4" />
+      <config projectName="render-engine" targetName="test-ext_vector_iec559" />
+      <config projectName="render-engine" targetName="test-gtc_round" />
+      <config projectName="render-engine" targetName="test-perf_vector_mul_matrix" />
+      <config projectName="render-engine" targetName="test-ext_matrix_transform" />
+      <config projectName="render-engine" targetName="test-gtx_closest_point" />
+      <config projectName="render-engine" targetName="test-ext_matrix_common" />
+      <config projectName="render-engine" targetName="test-core_force_ctor_init" />
+      <config projectName="render-engine" targetName="test-core_force_explicit_ctor" />
+      <config projectName="render-engine" targetName="test-core_force_xyzw_only" />
+      <config projectName="render-engine" targetName="test-core_cpp_constexpr" />
+      <config projectName="render-engine" targetName="IrrXML" />
+      <config projectName="render-engine" targetName="test-ext_matrix_relational" />
+      <config projectName="render-engine" targetName="glm_shared" />
+      <config projectName="render-engine" targetName="test-core_func_noise" />
+      <config projectName="render-engine" targetName="test-gtc_bitfield" />
+      <config projectName="render-engine" targetName="test-gtx_vector_angle" />
+      <config projectName="render-engine" targetName="test-core_type_length" />
+      <config projectName="render-engine" targetName="test-ext_vector_ulp" />
+      <config projectName="render-engine" targetName="test-gtx_extend" />
+      <config projectName="render-engine" targetName="test-gtx_range" />
+      <config projectName="render-engine" targetName="test-ext_scalar_ulp" />
+      <config projectName="render-engine" targetName="test-ext_quaternion_geometric" />
+      <config projectName="render-engine" targetName="test-ext_vector_integer" />
+      <config projectName="render-engine" targetName="test-gtc_integer" />
+      <config projectName="render-engine" targetName="test-gtx_exterior_product" />
+      <config projectName="render-engine" targetName="test-gtc_type_ptr" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_transform_2d" />
+      <config projectName="render-engine" targetName="test-core_force_unrestricted_gentype" />
+      <config projectName="render-engine" targetName="test-gtx_scalar_multiplication" />
+      <config projectName="render-engine" targetName="assimp_cmd" />
+      <config projectName="render-engine" targetName="test-core_force_pure" />
+      <config projectName="render-engine" targetName="test-gtx_optimum_pow" />
+      <config projectName="render-engine" targetName="test-ext_quaternion_exponential" />
+      <config projectName="render-engine" targetName="test-core_func_integer_find_lsb" />
+      <config projectName="render-engine" targetName="test-gtc_constants" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_interpolation" />
+      <config projectName="render-engine" targetName="test-ext_quaternion_transform" />
+      <config projectName="render-engine" targetName="test-gtc_epsilon" />
+      <config projectName="render-engine" targetName="test-core_type_mat4x2" />
+      <config projectName="render-engine" targetName="test-core_type_mat4x4" />
+      <config projectName="render-engine" targetName="test-gtx_associated_min_max" />
+      <config projectName="render-engine" targetName="test-gtx_string_cast" />
+      <config projectName="render-engine" targetName="test-core_type_mat4x3" />
+      <config projectName="render-engine" targetName="test-gtx_spline" />
+      <config projectName="render-engine" targetName="test-gtx_dual_quaternion" />
+      <config projectName="render-engine" targetName="glfw" />
+      <config projectName="render-engine" targetName="test-core_type_cast" />
+      <config projectName="render-engine" targetName="test-bug_ms_vec_static" />
+      <config projectName="render-engine" targetName="unit" />
+      <config projectName="render-engine" targetName="test-gtc_ulp" />
+      <config projectName="render-engine" targetName="test-ext_quaternion_trigonometric" />
+      <config projectName="render-engine" targetName="test-gtx_intersect" />
+      <config projectName="render-engine" targetName="test-gtc_matrix_inverse" />
+      <config projectName="render-engine" targetName="test-core_setup_force_size_t_length" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_major_storage" />
+      <config projectName="render-engine" targetName="test-gtc_color_space" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_decompose" />
+      <config projectName="render-engine" targetName="test-gtx_polar_coordinates" />
+      <config projectName="render-engine" targetName="test-gtx_scalar_relational" />
+      <config projectName="render-engine" targetName="test-core_func_geometric" />
+      <config projectName="render-engine" targetName="test-perf_matrix_mul" />
+      <config projectName="render-engine" targetName="test-ext_scalar_constants" />
+      <config projectName="render-engine" targetName="test-gtc_packing" />
+      <config projectName="render-engine" targetName="test-core_type_vec1" />
+      <config projectName="render-engine" targetName="test-core_type_vec2" />
+      <config projectName="render-engine" targetName="test-core_type_vec3" />
+      <config projectName="render-engine" targetName="test-ext_vector_bool1" />
+      <config projectName="render-engine" targetName="test-core_type_vec4" />
+      <config projectName="render-engine" targetName="test-core_func_trigonometric" />
+      <config projectName="render-engine" targetName="test-ext_scalar_int_sized" />
+      <config projectName="render-engine" targetName="test-gtx_rotate_normalized_axis" />
+      <config projectName="render-engine" targetName="test-ext_quaternion_common" />
+      <config projectName="render-engine" targetName="test-ext_scalar_relational" />
+      <config projectName="render-engine" targetName="test-gtx_wrap" />
+      <config projectName="render-engine" targetName="test-gtx_common" />
+      <config projectName="render-engine" targetName="test-core_setup_message" />
+      <config projectName="render-engine" targetName="test-gtx_log_base" />
+      <config projectName="render-engine" targetName="test-gtx_functions" />
+      <config projectName="render-engine" targetName="test-gtx_normal" />
+      <config projectName="render-engine" targetName="test-gtx_vec_swizzle" />
+      <config projectName="render-engine" targetName="test-perf_matrix_div" />
+      <config projectName="render-engine" targetName="test-core_func_integer" />
+      <config projectName="render-engine" targetName="test-gtc_matrix_integer" />
+      <config projectName="render-engine" targetName="test-core_func_common" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_query" />
+      <config projectName="render-engine" targetName="test-gtc_matrix_access" />
+      <config projectName="render-engine" targetName="test-ext_quaternion_type" />
+      <config projectName="render-engine" targetName="test-core_func_matrix" />
+      <config projectName="render-engine" targetName="test-core_type_aligned" />
+      <config projectName="render-engine" targetName="imgui" />
+      <config projectName="render-engine" targetName="test-gtx_orthonormalize" />
+      <config projectName="render-engine" targetName="test-core_force_aligned_gentypes" />
+      <config projectName="render-engine" targetName="test-gtx_matrix_factorisation" />
+      <config projectName="render-engine" targetName="test-gtx_fast_square_root" />
+      <config projectName="render-engine" targetName="test-gtx_io" />
+      <config projectName="render-engine" targetName="test-gtx_compatibility" />
+      <config projectName="render-engine" targetName="test-gtx_projection" />
+      <config projectName="render-engine" targetName="test-gtx_easing" />
+      <config projectName="render-engine" targetName="test-gtx_norm" />
+      <config projectName="render-engine" targetName="test-gtc_random" />
+      <config projectName="render-engine" targetName="test-core_type_ctor" />
+      <config projectName="render-engine" targetName="test-ext_quaternion_relational" />
+      <config projectName="render-engine" targetName="test-core_cpp_defaulted_ctor" />
+      <config projectName="render-engine" targetName="test-gtc_quaternion" />
+      <config projectName="render-engine" targetName="test-core_func_vector_relational" />
+      <config projectName="render-engine" targetName="uninstall" />
+      <config projectName="render-engine" targetName="test-gtx_component_wise" />
+      <config projectName="render-engine" targetName="test-gtx_perpendicular" />
+      <config projectName="render-engine" targetName="assimp" />
+      <config projectName="render-engine" targetName="test-core_type_int" />
+      <config projectName="render-engine" targetName="test-gtc_noise" />
+      <config projectName="render-engine" targetName="test-core_setup_precision" />
+      <config projectName="render-engine" targetName="test-core_type_mat2x2" />
+      <config projectName="render-engine" targetName="test-gtx_texture" />
+      <config projectName="render-engine" targetName="test-core_type_mat2x4" />
+      <config projectName="render-engine" targetName="test-core_type_mat2x3" />
+      <config projectName="render-engine" targetName="test-gtx_color_space" />
+      <config projectName="render-engine" targetName="test-core_func_integer_bit_count" />
+      <config projectName="render-engine" targetName="test-core_force_inline" />
+      <config projectName="render-engine" targetName="test-gtx_number_precision" />
+      <config projectName="render-engine" targetName="test-gtx_euler_angle" />
+      <config projectName="render-engine" targetName="test-gtx_fast_trigonometry" />
+      <config projectName="render-engine" targetName="test-ext_vector_relational" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="15082fb1-3bf2-4bc5-9b3b-4d90e56b9b7a" name="Default Changelist" comment="merge pbr shaders into one">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/render-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/ibl/GrandCanyon.hdr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/ibl/GrandCanyon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/ibl/newport_loft.hdr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pbr/ao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pbr/rustediron2_basecolor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pbr/rustediron2_metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pbr/rustediron2_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pbr/rustediron2_roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/brdf.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/brdf.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/cookTorrancePBR.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/cookTorrancePBR.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/cubemap.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/equirectangularToCubemap.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/irradianceConvolution.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/prefilter_map.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/skybox.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/skybox.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/triangle.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shaders/triangle.vert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Camera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Camera.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Light.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Light.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Mesh.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Mesh.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Model.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Model.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Object.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Object.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Shader.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Shader.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Texture.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/Texture.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/Application.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/Application.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/CookTorrancePbrObj.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/CookTorrancePbrObj.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/SceneGraph.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/SceneGraph.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Skybox.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Skybox.hpp" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+        <option value="GLSL Shader" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>texture</find>
+      <find>main</find>
+      <find>IMGUI_IMPL_OPENGL_LOADER_GLAD</find>
+      <find>glsl_version</find>
+      <find>shared</find>
+      <find>#include</find>
+      <find>metallic</find>
+      <find>library</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Skybox.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/include/Application.hpp" />
+        <option value="$PROJECT_DIR$/include/Skybox.hpp" />
+        <option value="$PROJECT_DIR$/include/Object.hpp" />
+        <option value="$PROJECT_DIR$/src/Application.cpp" />
+        <option value="$PROJECT_DIR$/include/Light.hpp" />
+        <option value="$PROJECT_DIR$/include/Texture.hpp" />
+        <option value="$PROJECT_DIR$/include/SceneGraph.hpp" />
+        <option value="$PROJECT_DIR$/include/Model.hpp" />
+        <option value="$PROJECT_DIR$/src/Model.cpp" />
+        <option value="$PROJECT_DIR$/src/basic/Mesh.hpp" />
+        <option value="$PROJECT_DIR$/src/basic/Model.hpp" />
+        <option value="$PROJECT_DIR$/src/objects/CookTorrancePbrObj.cpp" />
+        <option value="$PROJECT_DIR$/src/basic/Mesh.cpp" />
+        <option value="$PROJECT_DIR$/3rd-party/glad/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/3rd-party/imgui/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/3rd-party/stb_image/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/shaders/brdf.vert" />
+        <option value="$PROJECT_DIR$/shaders/cubemap.vert" />
+        <option value="$PROJECT_DIR$/shaders/equirectangularToCubemap.frag" />
+        <option value="$PROJECT_DIR$/shaders/irradianceConvolution.frag" />
+        <option value="$PROJECT_DIR$/shaders/skybox.frag" />
+        <option value="$PROJECT_DIR$/shaders/skybox.vert" />
+        <option value="$PROJECT_DIR$/shaders/triangle.frag" />
+        <option value="$PROJECT_DIR$/shaders/triangle.vert" />
+        <option value="$PROJECT_DIR$/shaders/prefilter_map.frag" />
+        <option value="$PROJECT_DIR$/shaders/brdf.frag" />
+        <option value="$PROJECT_DIR$/src/basic/SceneGraph.hpp" />
+        <option value="$PROJECT_DIR$/src/objects/CookTorrancePbrObj.hpp" />
+        <option value="$PROJECT_DIR$/src/basic/Transform.hpp" />
+        <option value="$PROJECT_DIR$/src/objects/RenderObject.hpp" />
+        <option value="$PROJECT_DIR$/src/objects/CookTorrancePbr.hpp" />
+        <option value="$PROJECT_DIR$/src/objects/SceneGraph.hpp" />
+        <option value="$PROJECT_DIR$/src/objects/Skybox.cpp" />
+        <option value="$PROJECT_DIR$/src/objects/Skybox.hpp" />
+        <option value="$PROJECT_DIR$/src/basic/Shader.hpp" />
+        <option value="$PROJECT_DIR$/src/basic/Model.cpp" />
+        <option value="$PROJECT_DIR$/shaders/cookTorrancePBR.frag" />
+        <option value="$PROJECT_DIR$/src/objects/CookTorrancePbr.cpp" />
+        <option value="$PROJECT_DIR$/src/engine/main.cpp" />
+        <option value="$PROJECT_DIR$/imgui.ini" />
+        <option value="$PROJECT_DIR$/src/basic/Geometry.hpp" />
+        <option value="$PROJECT_DIR$/src/basic/Object.hpp" />
+        <option value="$PROJECT_DIR$/shaders/cookTorrancePBR.vert" />
+        <option value="$PROJECT_DIR$/src/engine/SGNode.hpp" />
+        <option value="$PROJECT_DIR$/src/engine/SceneGraph.hpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/resources/meshes/teapot.obj" />
+        <option value="$PROJECT_DIR$/src/engine/Application.hpp" />
+        <option value="$PROJECT_DIR$/src/engine/Application.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="605" />
+    <option name="y" value="23" />
+    <option name="width" value="1224" />
+    <option name="height" value="1015" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="render-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="render-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/ibl" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/meshes" />
+      <recent name="$PROJECT_DIR$/src/engine" />
+      <recent name="$PROJECT_DIR$/src/objects" />
+      <recent name="$PROJECT_DIR$/src/basic" />
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/ibl" />
+      <recent name="$PROJECT_DIR$/shaders" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.engine">
+    <configuration name="IrrXML" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="IrrXML" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="assimp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="assimp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="assimp_cmd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="assimp_cmd" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="assimp_cmd">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="engine" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="engine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="engine">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glad" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="glad" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="glfw" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glm_shared" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="glm_shared" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glm_static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="glm_static" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="imgui" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="lab" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="lab">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stb_image" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="stb_image" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-bug_ms_vec_static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-bug_ms_vec_static" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-bug_ms_vec_static">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_cpp_constexpr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_cpp_constexpr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_cpp_constexpr">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_cpp_defaulted_ctor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_cpp_defaulted_ctor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_cpp_defaulted_ctor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_force_aligned_gentypes" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_force_aligned_gentypes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_force_aligned_gentypes">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_force_ctor_init" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_force_ctor_init" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_force_ctor_init">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_force_explicit_ctor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_force_explicit_ctor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_force_explicit_ctor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_force_inline" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_force_inline" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_force_inline">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_force_pure" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_force_pure" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_force_pure">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_force_unrestricted_gentype" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_force_unrestricted_gentype" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_force_unrestricted_gentype">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_force_xyzw_only" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_force_xyzw_only" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_force_xyzw_only">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_common">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_exponential" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_exponential" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_exponential">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_geometric" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_geometric" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_geometric">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_integer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_integer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_integer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_integer_bit_count" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_integer_bit_count" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_integer_bit_count">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_integer_find_lsb" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_integer_find_lsb" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_integer_find_lsb">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_integer_find_msb" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_integer_find_msb" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_integer_find_msb">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_matrix" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_matrix" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_matrix">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_noise" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_noise" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_noise">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_packing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_packing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_packing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_swizzle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_swizzle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_swizzle">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_trigonometric" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_trigonometric" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_trigonometric">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_func_vector_relational" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_func_vector_relational" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_func_vector_relational">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_setup_force_cxx98" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_setup_force_cxx98" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_setup_force_cxx98">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_setup_force_size_t_length" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_setup_force_size_t_length" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_setup_force_size_t_length">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_setup_message" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_setup_message" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_setup_message">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_setup_platform_unknown" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_setup_platform_unknown" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_setup_platform_unknown">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_setup_precision" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_setup_precision" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_setup_precision">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_aligned" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_aligned" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_aligned">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_cast" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_cast" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_cast">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_ctor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_ctor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_ctor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_int" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_int" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_int">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_length" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_length" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_length">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat2x2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat2x2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat2x2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat2x3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat2x3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat2x3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat2x4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat2x4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat2x4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat3x2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat3x2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat3x2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat3x3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat3x3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat3x3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat3x4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat3x4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat3x4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat4x2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat4x2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat4x2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat4x3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat4x3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat4x3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_mat4x4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_mat4x4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_mat4x4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_vec1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_vec1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_vec1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_vec2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_vec2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_vec2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_vec3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_vec3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_vec3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-core_type_vec4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-core_type_vec4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-core_type_vec4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_matrix_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_matrix_common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_matrix_common">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_matrix_relational" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_matrix_relational" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_matrix_relational">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_matrix_transform" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_matrix_transform" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_matrix_transform">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_quaternion_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_quaternion_common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_quaternion_common">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_quaternion_exponential" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_quaternion_exponential" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_quaternion_exponential">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_quaternion_geometric" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_quaternion_geometric" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_quaternion_geometric">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_quaternion_relational" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_quaternion_relational" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_quaternion_relational">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_quaternion_transform" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_quaternion_transform" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_quaternion_transform">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_quaternion_trigonometric" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_quaternion_trigonometric" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_quaternion_trigonometric">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_quaternion_type" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_quaternion_type" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_quaternion_type">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_scalar_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_scalar_common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_scalar_common">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_scalar_constants" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_scalar_constants" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_scalar_constants">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_scalar_int_sized" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_scalar_int_sized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_scalar_int_sized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_scalar_relational" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_scalar_relational" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_scalar_relational">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_scalar_uint_sized" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_scalar_uint_sized" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_scalar_uint_sized">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_scalar_ulp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_scalar_ulp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_scalar_ulp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_vec1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_vec1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_vec1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_vector_bool1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_vector_bool1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_vector_bool1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_vector_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_vector_common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_vector_common">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_vector_iec559" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_vector_iec559" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_vector_iec559">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_vector_integer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_vector_integer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_vector_integer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_vector_relational" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_vector_relational" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_vector_relational">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ext_vector_ulp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-ext_vector_ulp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-ext_vector_ulp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_bitfield" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_bitfield" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_bitfield">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_color_space" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_color_space" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_color_space">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_constants" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_constants" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_constants">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_epsilon" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_epsilon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_epsilon">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_integer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_integer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_integer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_matrix_access" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_matrix_access" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_matrix_access">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_matrix_integer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_matrix_integer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_matrix_integer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_matrix_inverse" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_matrix_inverse" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_matrix_inverse">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_matrix_transform" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_matrix_transform" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_matrix_transform">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_noise" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_noise" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_noise">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_packing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_packing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_packing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_quaternion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_quaternion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_quaternion">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_random" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_random" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_random">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_reciprocal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_reciprocal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_reciprocal">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_round" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_round" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_round">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_type_aligned" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_type_aligned" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_type_aligned">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_type_precision" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_type_precision" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_type_precision">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_type_ptr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_type_ptr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_type_ptr">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_ulp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_ulp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_ulp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtc_vec1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtc_vec1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtc_vec1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_associated_min_max" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_associated_min_max" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_associated_min_max">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_closest_point" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_closest_point" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_closest_point">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_color_encoding" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_color_encoding" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_color_encoding">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_color_space" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_color_space" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_color_space">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_color_space_YCoCg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_color_space_YCoCg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_color_space_YCoCg">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_common">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_compatibility" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_compatibility" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_compatibility">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_component_wise" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_component_wise" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_component_wise">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_dual_quaternion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_dual_quaternion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_dual_quaternion">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_easing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_easing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_easing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_euler_angle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_euler_angle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_euler_angle">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_extend" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_extend" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_extend">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_extended_min_max" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_extended_min_max" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_extended_min_max">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_exterior_product" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_exterior_product" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_exterior_product">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_fast_exponential" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_fast_exponential" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_fast_exponential">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_fast_square_root" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_fast_square_root" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_fast_square_root">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_fast_trigonometry" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_fast_trigonometry" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_fast_trigonometry">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_functions" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_functions" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_functions">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_gradient_paint" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_gradient_paint" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_gradient_paint">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_handed_coordinate_space" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_handed_coordinate_space" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_handed_coordinate_space">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_integer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_integer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_integer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_intersect" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_intersect" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_intersect">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_io" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_io" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_io">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_load" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_load" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_load">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_log_base" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_log_base" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_log_base">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_cross_product" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_cross_product" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_cross_product">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_decompose" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_decompose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_decompose">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_factorisation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_factorisation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_factorisation">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_interpolation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_interpolation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_interpolation">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_major_storage" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_major_storage" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_major_storage">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_operation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_operation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_operation">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_query" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_query" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_query">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_matrix_transform_2d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_matrix_transform_2d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_matrix_transform_2d">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_norm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_norm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_norm">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_normal" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_normal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_normal">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_normalize_dot" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_normalize_dot" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_normalize_dot">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_number_precision" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_number_precision" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_number_precision">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_optimum_pow" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_optimum_pow" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_optimum_pow">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_orthonormalize" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_orthonormalize" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_orthonormalize">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_perpendicular" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_perpendicular" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_perpendicular">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_polar_coordinates" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_polar_coordinates" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_polar_coordinates">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_projection" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_projection" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_projection">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_quaternion" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_quaternion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_quaternion">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_range" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_range" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_range">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_rotate_normalized_axis" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_rotate_normalized_axis" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_rotate_normalized_axis">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_rotate_vector" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_rotate_vector" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_rotate_vector">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_scalar_multiplication" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_scalar_multiplication" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_scalar_multiplication">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_scalar_relational" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_scalar_relational" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_scalar_relational">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_spline" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_spline" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_spline">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_string_cast" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_string_cast" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_string_cast">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_texture" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_texture" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_texture">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_type_aligned" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_type_aligned" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_type_aligned">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_type_trait" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_type_trait" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_type_trait">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_vec_swizzle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_vec_swizzle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_vec_swizzle">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_vector_angle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_vector_angle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_vector_angle">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_vector_query" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_vector_query" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_vector_query">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-gtx_wrap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-gtx_wrap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-gtx_wrap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-perf_matrix_div" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-perf_matrix_div" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-perf_matrix_div">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-perf_matrix_inverse" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-perf_matrix_inverse" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-perf_matrix_inverse">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-perf_matrix_mul" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-perf_matrix_mul" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-perf_matrix_mul">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-perf_matrix_mul_vector" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-perf_matrix_mul_vector" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-perf_matrix_mul_vector">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-perf_matrix_transpose" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-perf_matrix_transpose" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-perf_matrix_transpose">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-perf_vector_mul_matrix" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="test-perf_vector_mul_matrix" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="test-perf_vector_mul_matrix">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="render-engine" TARGET_NAME="unit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="render-engine" RUN_TARGET_NAME="unit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.engine" />
+      <item itemvalue="CMake Application.assimp" />
+      <item itemvalue="CMake Application.IrrXML" />
+      <item itemvalue="CMake Application.unit" />
+      <item itemvalue="CMake Application.assimp_cmd" />
+      <item itemvalue="CMake Application.glad" />
+      <item itemvalue="CMake Application.glfw" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.glm_shared" />
+      <item itemvalue="CMake Application.glm_static" />
+      <item itemvalue="CMake Application.test-bug_ms_vec_static" />
+      <item itemvalue="CMake Application.test-core_cpp_constexpr" />
+      <item itemvalue="CMake Application.test-core_cpp_defaulted_ctor" />
+      <item itemvalue="CMake Application.test-core_force_aligned_gentypes" />
+      <item itemvalue="CMake Application.test-core_force_ctor_init" />
+      <item itemvalue="CMake Application.test-core_force_explicit_ctor" />
+      <item itemvalue="CMake Application.test-core_force_inline" />
+      <item itemvalue="CMake Application.test-core_force_pure" />
+      <item itemvalue="CMake Application.test-core_force_unrestricted_gentype" />
+      <item itemvalue="CMake Application.test-core_force_xyzw_only" />
+      <item itemvalue="CMake Application.test-core_func_common" />
+      <item itemvalue="CMake Application.test-core_func_exponential" />
+      <item itemvalue="CMake Application.test-core_func_geometric" />
+      <item itemvalue="CMake Application.test-core_func_integer" />
+      <item itemvalue="CMake Application.test-core_func_integer_bit_count" />
+      <item itemvalue="CMake Application.test-core_func_integer_find_lsb" />
+      <item itemvalue="CMake Application.test-core_func_integer_find_msb" />
+      <item itemvalue="CMake Application.test-core_func_matrix" />
+      <item itemvalue="CMake Application.test-core_func_noise" />
+      <item itemvalue="CMake Application.test-core_func_packing" />
+      <item itemvalue="CMake Application.test-core_func_swizzle" />
+      <item itemvalue="CMake Application.test-core_func_trigonometric" />
+      <item itemvalue="CMake Application.test-core_func_vector_relational" />
+      <item itemvalue="CMake Application.test-core_setup_force_cxx98" />
+      <item itemvalue="CMake Application.test-core_setup_force_size_t_length" />
+      <item itemvalue="CMake Application.test-core_setup_message" />
+      <item itemvalue="CMake Application.test-core_setup_platform_unknown" />
+      <item itemvalue="CMake Application.test-core_setup_precision" />
+      <item itemvalue="CMake Application.test-core_type_aligned" />
+      <item itemvalue="CMake Application.test-core_type_cast" />
+      <item itemvalue="CMake Application.test-core_type_ctor" />
+      <item itemvalue="CMake Application.test-core_type_int" />
+      <item itemvalue="CMake Application.test-core_type_length" />
+      <item itemvalue="CMake Application.test-core_type_mat2x2" />
+      <item itemvalue="CMake Application.test-core_type_mat2x3" />
+      <item itemvalue="CMake Application.test-core_type_mat2x4" />
+      <item itemvalue="CMake Application.test-core_type_mat3x2" />
+      <item itemvalue="CMake Application.test-core_type_mat3x3" />
+      <item itemvalue="CMake Application.test-core_type_mat3x4" />
+      <item itemvalue="CMake Application.test-core_type_mat4x2" />
+      <item itemvalue="CMake Application.test-core_type_mat4x3" />
+      <item itemvalue="CMake Application.test-core_type_mat4x4" />
+      <item itemvalue="CMake Application.test-core_type_vec1" />
+      <item itemvalue="CMake Application.test-core_type_vec2" />
+      <item itemvalue="CMake Application.test-core_type_vec3" />
+      <item itemvalue="CMake Application.test-core_type_vec4" />
+      <item itemvalue="CMake Application.test-ext_matrix_common" />
+      <item itemvalue="CMake Application.test-ext_matrix_relational" />
+      <item itemvalue="CMake Application.test-ext_matrix_transform" />
+      <item itemvalue="CMake Application.test-ext_quaternion_common" />
+      <item itemvalue="CMake Application.test-ext_quaternion_exponential" />
+      <item itemvalue="CMake Application.test-ext_quaternion_geometric" />
+      <item itemvalue="CMake Application.test-ext_quaternion_relational" />
+      <item itemvalue="CMake Application.test-ext_quaternion_transform" />
+      <item itemvalue="CMake Application.test-ext_quaternion_trigonometric" />
+      <item itemvalue="CMake Application.test-ext_quaternion_type" />
+      <item itemvalue="CMake Application.test-ext_scalar_common" />
+      <item itemvalue="CMake Application.test-ext_scalar_constants" />
+      <item itemvalue="CMake Application.test-ext_scalar_int_sized" />
+      <item itemvalue="CMake Application.test-ext_scalar_relational" />
+      <item itemvalue="CMake Application.test-ext_scalar_uint_sized" />
+      <item itemvalue="CMake Application.test-ext_scalar_ulp" />
+      <item itemvalue="CMake Application.test-ext_vec1" />
+      <item itemvalue="CMake Application.test-ext_vector_bool1" />
+      <item itemvalue="CMake Application.test-ext_vector_common" />
+      <item itemvalue="CMake Application.test-ext_vector_iec559" />
+      <item itemvalue="CMake Application.test-ext_vector_integer" />
+      <item itemvalue="CMake Application.test-ext_vector_relational" />
+      <item itemvalue="CMake Application.test-ext_vector_ulp" />
+      <item itemvalue="CMake Application.test-gtc_bitfield" />
+      <item itemvalue="CMake Application.test-gtc_color_space" />
+      <item itemvalue="CMake Application.test-gtc_constants" />
+      <item itemvalue="CMake Application.test-gtc_epsilon" />
+      <item itemvalue="CMake Application.test-gtc_integer" />
+      <item itemvalue="CMake Application.test-gtc_matrix_access" />
+      <item itemvalue="CMake Application.test-gtc_matrix_integer" />
+      <item itemvalue="CMake Application.test-gtc_matrix_inverse" />
+      <item itemvalue="CMake Application.test-gtc_matrix_transform" />
+      <item itemvalue="CMake Application.test-gtc_noise" />
+      <item itemvalue="CMake Application.test-gtc_packing" />
+      <item itemvalue="CMake Application.test-gtc_quaternion" />
+      <item itemvalue="CMake Application.test-gtc_random" />
+      <item itemvalue="CMake Application.test-gtc_reciprocal" />
+      <item itemvalue="CMake Application.test-gtc_round" />
+      <item itemvalue="CMake Application.test-gtc_type_aligned" />
+      <item itemvalue="CMake Application.test-gtc_type_precision" />
+      <item itemvalue="CMake Application.test-gtc_type_ptr" />
+      <item itemvalue="CMake Application.test-gtc_ulp" />
+      <item itemvalue="CMake Application.test-gtc_vec1" />
+      <item itemvalue="CMake Application.test-gtx" />
+      <item itemvalue="CMake Application.test-gtx_associated_min_max" />
+      <item itemvalue="CMake Application.test-gtx_closest_point" />
+      <item itemvalue="CMake Application.test-gtx_color_encoding" />
+      <item itemvalue="CMake Application.test-gtx_color_space" />
+      <item itemvalue="CMake Application.test-gtx_color_space_YCoCg" />
+      <item itemvalue="CMake Application.test-gtx_common" />
+      <item itemvalue="CMake Application.test-gtx_compatibility" />
+      <item itemvalue="CMake Application.test-gtx_component_wise" />
+      <item itemvalue="CMake Application.test-gtx_dual_quaternion" />
+      <item itemvalue="CMake Application.test-gtx_easing" />
+      <item itemvalue="CMake Application.test-gtx_euler_angle" />
+      <item itemvalue="CMake Application.test-gtx_extend" />
+      <item itemvalue="CMake Application.test-gtx_extended_min_max" />
+      <item itemvalue="CMake Application.test-gtx_exterior_product" />
+      <item itemvalue="CMake Application.test-gtx_fast_exponential" />
+      <item itemvalue="CMake Application.test-gtx_fast_square_root" />
+      <item itemvalue="CMake Application.test-gtx_fast_trigonometry" />
+      <item itemvalue="CMake Application.test-gtx_functions" />
+      <item itemvalue="CMake Application.test-gtx_gradient_paint" />
+      <item itemvalue="CMake Application.test-gtx_handed_coordinate_space" />
+      <item itemvalue="CMake Application.test-gtx_integer" />
+      <item itemvalue="CMake Application.test-gtx_intersect" />
+      <item itemvalue="CMake Application.test-gtx_io" />
+      <item itemvalue="CMake Application.test-gtx_load" />
+      <item itemvalue="CMake Application.test-gtx_log_base" />
+      <item itemvalue="CMake Application.test-gtx_matrix_cross_product" />
+      <item itemvalue="CMake Application.test-gtx_matrix_decompose" />
+      <item itemvalue="CMake Application.test-gtx_matrix_factorisation" />
+      <item itemvalue="CMake Application.test-gtx_matrix_interpolation" />
+      <item itemvalue="CMake Application.test-gtx_matrix_major_storage" />
+      <item itemvalue="CMake Application.test-gtx_matrix_operation" />
+      <item itemvalue="CMake Application.test-gtx_matrix_query" />
+      <item itemvalue="CMake Application.test-gtx_matrix_transform_2d" />
+      <item itemvalue="CMake Application.test-gtx_norm" />
+      <item itemvalue="CMake Application.test-gtx_normal" />
+      <item itemvalue="CMake Application.test-gtx_normalize_dot" />
+      <item itemvalue="CMake Application.test-gtx_number_precision" />
+      <item itemvalue="CMake Application.test-gtx_optimum_pow" />
+      <item itemvalue="CMake Application.test-gtx_orthonormalize" />
+      <item itemvalue="CMake Application.test-gtx_perpendicular" />
+      <item itemvalue="CMake Application.test-gtx_polar_coordinates" />
+      <item itemvalue="CMake Application.test-gtx_projection" />
+      <item itemvalue="CMake Application.test-gtx_quaternion" />
+      <item itemvalue="CMake Application.test-gtx_range" />
+      <item itemvalue="CMake Application.test-gtx_rotate_normalized_axis" />
+      <item itemvalue="CMake Application.test-gtx_rotate_vector" />
+      <item itemvalue="CMake Application.test-gtx_scalar_multiplication" />
+      <item itemvalue="CMake Application.test-gtx_scalar_relational" />
+      <item itemvalue="CMake Application.test-gtx_spline" />
+      <item itemvalue="CMake Application.test-gtx_string_cast" />
+      <item itemvalue="CMake Application.test-gtx_texture" />
+      <item itemvalue="CMake Application.test-gtx_type_aligned" />
+      <item itemvalue="CMake Application.test-gtx_type_trait" />
+      <item itemvalue="CMake Application.test-gtx_vec_swizzle" />
+      <item itemvalue="CMake Application.test-gtx_vector_angle" />
+      <item itemvalue="CMake Application.test-gtx_vector_query" />
+      <item itemvalue="CMake Application.test-gtx_wrap" />
+      <item itemvalue="CMake Application.test-perf_matrix_div" />
+      <item itemvalue="CMake Application.test-perf_matrix_inverse" />
+      <item itemvalue="CMake Application.test-perf_matrix_mul" />
+      <item itemvalue="CMake Application.test-perf_matrix_mul_vector" />
+      <item itemvalue="CMake Application.test-perf_matrix_transpose" />
+      <item itemvalue="CMake Application.test-perf_vector_mul_matrix" />
+      <item itemvalue="CMake Application.imgui" />
+      <item itemvalue="CMake Application.stb_image" />
+      <item itemvalue="CMake Application.lab" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15082fb1-3bf2-4bc5-9b3b-4d90e56b9b7a" name="Default Changelist" comment="" />
+      <created>1569748483471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569748483471</updated>
+      <workItem from="1569748485521" duration="1736000" />
+      <workItem from="1569750693509" duration="3871000" />
+      <workItem from="1569832734479" duration="616000" />
+      <workItem from="1572149774846" duration="1061000" />
+      <workItem from="1572152002188" duration="4274000" />
+      <workItem from="1574080630790" duration="1940000" />
+      <workItem from="1574082594270" duration="241000" />
+      <workItem from="1574082851882" duration="490000" />
+      <workItem from="1574133368334" duration="5022000" />
+      <workItem from="1574147241456" duration="4576000" />
+      <workItem from="1574216210007" duration="7584000" />
+      <workItem from="1574322542063" duration="11686000" />
+      <workItem from="1574394811251" duration="15255000" />
+      <workItem from="1574430800553" duration="2895000" />
+      <workItem from="1574439446317" duration="338000" />
+      <workItem from="1574497532193" duration="628000" />
+      <workItem from="1574941370344" duration="82852000" />
+      <workItem from="1575701465788" duration="4203000" />
+      <workItem from="1575705781948" duration="26000" />
+      <workItem from="1575705827312" duration="8460000" />
+      <workItem from="1575724581726" duration="8108000" />
+      <workItem from="1575795647217" duration="4163000" />
+      <workItem from="1575890874270" duration="10384000" />
+      <workItem from="1576133604168" duration="791000" />
+      <workItem from="1576158276653" duration="3394000" />
+      <workItem from="1576332127370" duration="11676000" />
+      <workItem from="1576739299275" duration="163000" />
+      <workItem from="1576739807370" duration="1710000" />
+      <workItem from="1576742805506" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="198164000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="605" y="23" width="1224" height="1015" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18189509" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.51620114" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.032502707" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499385" weight="0.156013" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.033519555" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49950248" weight="0.41386783" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32960895" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500615" side_tool="true" weight="0.27039105" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32960895" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.24918744" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16159105" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.51620114" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.033519555" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499385" weight="0.2603352" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49950248" weight="0.41452515" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32960895" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500615" side_tool="true" weight="0.27039105" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32960895" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.34189945" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/3rd-party/assimp" />
+    </ignored-roots>
+    <MESSAGE value="merge pbr shaders into one" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge pbr shaders into one" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/3rd-party/stb_image/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/3rd-party/assimp/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/shaders/cubemap.vert" />
+    <entry file="file://$PROJECT_DIR$/shaders/equirectangularToCubemap.frag" />
+    <entry file="file://$PROJECT_DIR$/shaders/triangle.frag" />
+    <entry file="file://$PROJECT_DIR$/resources/pbr/rustediron2_metallic.png" />
+    <entry file="file://$PROJECT_DIR$/resources/pbr/rustediron2_normal.png" />
+    <entry file="file://$PROJECT_DIR$/3rd-party/glm-0.9.9.5/glm/ext/matrix_transform.inl" />
+    <entry file="file://$PROJECT_DIR$/shaders/skybox.vert" />
+    <entry file="file://$PROJECT_DIR$/src/objects/RenderObject.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/objects/RenderObject.hpp" />
+    <entry file="file://$PROJECT_DIR$/shaders/triangle.vert" />
+    <entry file="file://$PROJECT_DIR$/src/objects/Skybox.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/objects/Skybox.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Transform.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/engine/SceneGraph.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/engine/SGNode.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Model.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Transform.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/engine/SceneGraph.hpp" />
+    <entry file="file://$PROJECT_DIR$/shaders/prefilter_map.frag" />
+    <entry file="file://$PROJECT_DIR$/shaders/skybox.frag" />
+    <entry file="file://$PROJECT_DIR$/shaders/irradianceConvolution.frag" />
+    <entry file="file://$PROJECT_DIR$/shaders/brdf.vert" />
+    <entry file="file://$PROJECT_DIR$/shaders/cookTorrancePBR.frag" />
+    <entry file="file://$PROJECT_DIR$/shaders/cookTorrancePBR.vert" />
+    <entry file="file://$PROJECT_DIR$/src/engine/SGNode.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/objects/CookTorrancePbr.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/objects/CookTorrancePbr.cpp" />
+    <entry file="file://$PROJECT_DIR$/shaders/brdf.frag" />
+    <entry file="file://$PROJECT_DIR$/3rd-party/glad/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/resources/meshes/dragon.obj" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Camera.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Mesh.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Mesh.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Model.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Geometry.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Object.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Geometry.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Shader.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Shader.cpp" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basic/Camera.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Light.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Light.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/basic/Object.hpp" />
+    <entry file="file://$PROJECT_DIR$/resources/meshes/teapot.obj" />
+    <entry file="file://$PROJECT_DIR$/src/engine/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/imgui.ini" />
+    <entry file="file://$PROJECT_DIR$/src/engine/Application.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/engine/Application.cpp" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
