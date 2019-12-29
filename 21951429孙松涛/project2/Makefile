@@ -1,0 +1,13 @@
+CXX = g++
+CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=c++17 -g -fsanitize=address
+LDFLAGS =  -std=gnu++0x
+LBLIBS = -lGL -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl
+
+SRC = main.cpp glad.c stb_image.cpp
+OBJ = $(SRC:.cc=.o)
+EXEC = main
+
+all: $(EXEC)
+
+$(EXEC): $(OBJ)
+	$(CXX) $(LDFLAGS) -o $@ $(OBJ) $(LBLIBS)
