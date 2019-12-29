@@ -1,12 +1,18 @@
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
-import numpy as np
-import sys
+
+
+def drawFunc1():
+    glClear(GL_COLOR_BUFFER_BIT)
+    glutWireTeapot(0.5)
+    glFlush()
 
 
 def drawFunc():
     glClear(GL_COLOR_BUFFER_BIT)
+    glRotatef(0.1, 5, 5, 0)
+    glutWireTeapot(0.5)
     glutWireTeapot(0.5)
     glFlush()
 
@@ -19,25 +25,25 @@ def keyboardFunc(key, x, y):
     f和h表示左右翻转
     r和表示上下翻转
     """
-    if (key == b'W' or key == b'w'):
+    if key == b'W' or key == b'w':
         glTranslate(0, 0.1, 0)
-    elif (key == b'S' or key == b's'):
+    elif key == b'S' or key == b's':
         glTranslate(0, -0.1, 0)
-    elif (key == b'A' or key == b'a'):
+    elif key == b'A' or key == b'a':
         glTranslate(-0.1, 0, 0)
-    elif (key == b'D' or key == b'd'):
+    elif key == b'D' or key == b'd':
         glTranslate(0.1, 0, 0)
-    elif (key == b'T' or key == b't'):
+    elif key == b'T' or key == b't':
         glRotate(1.0, 1, 0, 0)
-    elif (key == b'g' or key == b'G'):
+    elif key == b'g' or key == b'G':
         glRotate(-1.0, 1, 0, 0)
-    elif (key == b'f' or key == b'F'):
+    elif key == b'f' or key == b'F':
         glRotate(1.0, 0, 1, 0)
-    elif (key == b'h' or key == b'H'):
+    elif key == b'h' or key == b'H':
         glRotate(-1.0, 0, 1, 0)
-    elif (key == b'R' or key == b'r'):
+    elif key == b'R' or key == b'r':
         glRotate(-1.0, 0, 0, 1)
-    elif (key == b'y' or key == b'y'):
+    elif key == b'y' or key == b'y':
         glRotate(1.0, 0, 0, 1)
 
 
