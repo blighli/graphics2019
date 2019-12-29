@@ -1,0 +1,15 @@
+提交第一次作业
+
+环境：
+Win10,visual studio 2017
+OpenGL 3.3
+glew 2.1.0
+glfw 3.3
+glm 0.9.8.5
+
+完成情况：
+绘制了正方体，并进行了纹理填充
+实现了相机控制，可从不同角度观察正方体
+详细效果参考附件：HM_01.mp4
+
+参考：https://learnopengl-cn.github.io/01%20Getting%20started/01%20OpenGL/

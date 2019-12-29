@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shader.frag</file>
+        <file>shader.vert</file>
+        <file>sun.frag</file>
+        <file>sun.vert</file>
+        <file>earth.frag</file>
+        <file>earth.vert</file>
+        <file>moon.frag</file>
+        <file>moon.vert</file>
+        <file>selection.frag</file>
+        <file>selection.vert</file>
+    </qresource>
+</RCC>
