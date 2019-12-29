@@ -1,0 +1,15 @@
+﻿  orgin.cpp
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(22): warning C4305: “初始化”: 从“double”到“float”截断
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(52): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(75): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(81): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(89): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(91): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(213): warning C4305: “=”: 从“double”到“float”截断
+c:\users\peter\desktop\图形学\太阳系作业\orgin\orgin\orgin.cpp(214): warning C4305: “=”: 从“double”到“float”截断
+  正在生成代码
+  9 of 31 functions (29.0%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  orgin.vcxproj -> C:\Users\peter\Desktop\图形学\太阳系作业\orgin\Release\orgin.exe

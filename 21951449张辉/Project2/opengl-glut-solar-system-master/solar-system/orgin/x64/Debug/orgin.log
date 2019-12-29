@@ -1,0 +1,10 @@
+﻿  orgin.cpp
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(22): warning C4305: “初始化”: 从“double”到“float”截断
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(52): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(75): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(81): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(89): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(91): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(213): warning C4305: “=”: 从“double”到“float”截断
+c:\users\peter\documents\github\opengl-glut-solar-system\solar-system\orgin\orgin.cpp(214): warning C4305: “=”: 从“double”到“float”截断
+  orgin.vcxproj -> C:\Users\peter\Documents\GitHub\opengl-glut-solar-system\solar-system\x64\Debug\orgin.exe
