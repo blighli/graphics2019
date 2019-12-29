@@ -1,0 +1,15 @@
+﻿  main.cpp
+d:\workfile\workspace\project2\project2\main.cpp(79): warning C4554: “^”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+d:\workfile\workspace\project2\project2\main.cpp(104): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\workfile\workspace\project2\project2\main.cpp(104): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+d:\workfile\workspace\project2\project2\main.cpp(107): warning C4305: “参数”: 从“double”到“GLclampf”截断
+d:\workfile\workspace\project2\project2\main.cpp(137): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\workfile\workspace\project2\project2\main.cpp(137): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+d:\workfile\workspace\project2\project2\main.cpp(138): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\workfile\workspace\project2\project2\main.cpp(138): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+d:\workfile\workspace\project2\project2\main.cpp(139): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\workfile\workspace\project2\project2\main.cpp(139): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+d:\workfile\workspace\project2\project2\main.cpp(144): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+d:\workfile\workspace\project2\project2\main.cpp(144): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+  Project2.vcxproj -> D:\workFile\workspace\Project2\x64\Debug\Project2.exe
+  Project2.vcxproj -> D:\workFile\workspace\Project2\x64\Debug\Project2.pdb (Partial PDB)
