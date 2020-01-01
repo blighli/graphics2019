@@ -1,5 +1,0 @@
-in    varying vec3 _outColor;
-void main(){
-
-    gl_FragColor = vec4(_outColor,1);
-}
