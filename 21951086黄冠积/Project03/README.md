@@ -13,6 +13,7 @@
                  鼠标滑轮控制模型的放大缩小，长按鼠标左键，模型逆时针旋转；长按鼠标右键，模型顺时针旋转
                  
 效果：
+
 ![image](https://github.com/Running-Chicken007/graphics2019/blob/second/21951086%E9%BB%84%E5%86%A0%E7%A7%AF/Project03/show1.gif)
 
 ![image](https://github.com/Running-Chicken007/graphics2019/blob/second/21951086%E9%BB%84%E5%86%A0%E7%A7%AF/Project03/show2.gif)
