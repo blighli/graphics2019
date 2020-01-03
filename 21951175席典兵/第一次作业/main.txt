@@ -1,0 +1,225 @@
+#include <stdlib.h>
+#include "glut.h"
+
+float fTranslate;//整体平移因子
+float fRotate = 0.0f;//整体旋转因子
+float tRotate = 0.0f;//茶壶旋转因子
+
+bool tAnim = false;//茶壶旋转
+bool bPersp = false;//渲染
+bool bAnim = false;//整体旋转
+bool bWire = false;//填充、线框
+
+int wHeight = 0;
+int wWidth = 0;
+float place[] = { 0,0,7 };
+
+void Draw_Leg()
+{
+	glScalef(1, 1, 3);
+	glutSolidCube(1.0);
+}
+
+void Draw_Scene()
+{
+	glPushMatrix();//当前矩阵压栈
+	glTranslatef(place[0], place[1], place[2]);//平移，放在桌面上的高度
+	glRotatef(90, 1, 0, 0); //茶壶绕x轴旋转的角度
+	glRotatef(tRotate, 0, 1, 0);
+	glutSolidTeapot(3);//size绘制茶壶
+	glPopMatrix();
+	//绘制桌面
+	glPushMatrix();
+	glTranslatef(0, 0, 3.5);
+	glScalef(8, 8, 1);
+	glutSolidCube(1.0);
+	glPopMatrix();
+	//四条桌子腿
+	glPushMatrix();
+	glTranslatef(1.5, 1, 1.5);
+	Draw_Leg();
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(-1.5, 1, 1.5);
+	Draw_Leg();
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(1.5, -1, 1.5);
+	Draw_Leg();
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslatef(-1.5, -1, 1.5);
+	Draw_Leg();
+	glPopMatrix();
+}
+
+void updateView(int width, int height)
+{
+	glViewport(0, 0, width, height);						// Reset The Current Viewport
+
+	glMatrixMode(GL_PROJECTION);						// Select The Projection Matrix
+	glLoadIdentity();									// Reset The Projection Matrix
+
+	float whRatio = (GLfloat)width / (GLfloat)height;
+
+	if (bPersp)
+		gluPerspective(45, whRatio, 1, 100);
+	//透视模式下，物体近大远小，参数分别为（视角，宽高比，近处，远处）
+	else
+		glOrtho(-3, 3, -3, 3, -100, 100);
+
+	glMatrixMode(GL_MODELVIEW);//对模型视景矩阵堆栈应用随后的矩阵
+}
+
+void reshape(int width, int height)
+{
+	if (height == 0)										// Prevent A Divide By Zero By
+	{
+		height = 1;										// Making Height Equal One
+	}
+
+	wHeight = height;
+	wWidth = width;
+	updateView(wHeight, wWidth);
+}
+
+void idle()
+{
+	glutPostRedisplay();
+}
+
+float eye[] = { 0, 0, 8 };
+float center[] = { 0, 0, 0 };
+
+
+void key(unsigned char k, int x, int y)
+{
+	switch (k)
+	{
+	case 27://ESC
+	case 'q': {exit(0); break; }//退出
+	case 'p': {bPersp = !bPersp; updateView(wHeight, wWidth); break; }//切换投影方式
+
+	case ' ': {bAnim = !bAnim; break; }//空格控制旋转
+	case 'o': {bWire = !bWire; break; }//o控制显示模式：填充\线框
+
+	case 'a': {//左移
+		center[0] += 0.1f;
+		eye[0] += 0.1f;
+		break;
+	}
+	case 'd': {//右移
+		center[0] -= 0.1f;
+		eye[0] -= 0.1f;
+		break;
+	}
+	case 'w': {//上移
+		center[1] -= 0.1f;
+		eye[1] -= 0.1f;
+		break;
+	}
+	case 's': {//下移
+		center[1] += 0.1f;
+		eye[1] += 0.1f;
+		break;
+	}
+	case 'z': {//前移
+		center[2] += 0.1f;
+		eye[2] += 0.1f;
+		break;
+	}
+	case 'c': {//后移
+		center[2] -= 0.1f;
+		eye[2] -= 0.1f;
+		break;
+	}
+
+			//茶壶相关操作
+	case 'l': {//右移
+		place[0] += 0.1f;
+		place[0] = (place[0] > 1.5f) ? 1.5f : place[0];
+		break;
+	}
+	case 'j': {//左移
+		place[0] -= 0.1f;
+		place[0] = (place[0] < -1.5f) ? -1.5f : place[0];
+		break;
+	}
+	case 'i': {//后移
+		place[1] += 0.1f;
+		place[1] = (place[1] > 1.5f) ? 1.5f : place[1];
+		break;
+	}
+	case 'k': {//前移
+		place[1] -= 0.1f;
+		place[1] = (place[1] < -1.5f) ? -1.5f : place[1];
+		break;
+	}
+	case 'e': {//旋转茶壶
+		tAnim = !tAnim;
+		break;
+	}
+	}
+}
+
+
+void redraw()
+{
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//清除颜色缓存以及深度缓存
+	glLoadIdentity();//重置为单位矩阵
+	//gluLookAt定义一个视图矩阵，并与当前矩阵相乘
+	gluLookAt(eye[0], eye[1], eye[2],
+		center[0], center[1], center[2],
+		0, 1, 0);				// 场景（0，0，0）的视点中心 (0,5,50)，Y轴向上
+	//三个数组代表的分别是：相机在世界坐标中的位置
+	//					相机对准的物体在世界坐标中的位置
+	//					相机朝上的方向在世界坐标中的位置
+	if (bWire)
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);//线框模式
+	else
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);//填充模式
+
+	glEnable(GL_DEPTH_TEST);//启用深度测试，根据坐标远近自动隐藏被遮住的物体
+	glEnable(GL_LIGHTING);//启用灯光
+	GLfloat white[] = { 1.0, 1.0, 1.0, 1.0 };
+	GLfloat light_pos[] = { 5,5,5,1 };
+	//在Opengl中总共可以设置8个光源
+	glLightfv(GL_LIGHT0, GL_POSITION, light_pos);//设置0号光源的位置属性
+	glLightfv(GL_LIGHT0, GL_AMBIENT, white);//设置0号光源的环境光属性
+	glEnable(GL_LIGHT0);//启用0号光源
+
+	//	glTranslatef(0.0f, 0.0f,-6.0f);			// Place the triangle at Center
+	glRotatef(fRotate, 0, 1.0f, 0);			// Rotate around Y axis
+	glRotatef(-90, 1, 0, 0);//绕x轴逆时针90
+	glScalef(0.2, 0.2, 0.2);
+	Draw_Scene();						// Draw Scene
+
+	if (bAnim)
+		fRotate += 0.5f;//旋转
+	if (tAnim)
+		tRotate += 0.5f;
+
+	glutSwapBuffers();//交换缓冲区
+}
+
+int main(int argc, char* argv[])
+{
+	glutInit(&argc, argv);//对glut函数库进行初始化
+	glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);//指定glutCreateWindow函数将要创建的窗口显示模式 RGB 深度缓存 双缓存模式
+	glutInitWindowSize(680, 680);//设置窗口大小
+	int windowHandle = glutCreateWindow("DoBetter-作业1");//打开设置好的窗口，进入glutMainLoop之前这个窗口不会显示
+
+	glutDisplayFunc(redraw);//指定当前窗口需要重新绘制时调用的函数
+	glutReshapeFunc(reshape);	//当注册窗口大小改变时回调函数
+	glutKeyboardFunc(key);//为当前窗口指定键盘回调
+	glutIdleFunc(idle);//可以执行连续动画
+
+	glutMainLoop();//进入glut时间处理循环，永远不会返回
+	return 0;
+}
+//在窗口和全屏模式下切换，按ESC退出。
+
+
