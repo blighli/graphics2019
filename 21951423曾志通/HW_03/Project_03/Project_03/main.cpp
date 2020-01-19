@@ -74,6 +74,7 @@ int main() {
 	// ------------------------------------
 	Shader ourShader("model.vs", "model.fs");
 	Shader lampShader("lamp.vs", "lamp.fs");
+	Shader squareShader("square.vs", "square.fs");
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes of lamps
 // -------------------------------------------------------------------------------
@@ -154,6 +155,39 @@ int main() {
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 
+	// Square
+	float square[] = {
+		// positions		// colors
+		 0.5f,  0.0f,  0.5f,  0.8f, 0.8f, 0.2f,
+		 0.5f,  0.0f, -0.5f,  0.2f, 0.8f, 0.2f,
+		-0.5f,  0.0f,  0.5f,  0.2f, 0.2f, 0.8f,
+		-0.5f,  0.0f, -0.5f,  0.8f, 0.2f, 0.2f,
+		 0.0f,  0.0f,  0.0f,  0.5f, 0.5f, 0.5f
+	/*	 1.0f, -2.0f,  1.0f,  0.8f, 0.8f, 0.2f, 
+		 1.0f, -2.0f, -1.0f,  0.2f, 0.8f, 0.2f,
+		-1.0f, -2.0f,  1.0f,  0.2f, 0.2f, 0.8f,
+		-1.0f, -2.0f, -1.0f,  0.8f, 0.2f, 0.2f*/
+	};
+	unsigned int indices[] = {
+		0, 1, 4,
+		1, 3, 4,
+		3, 2, 4,
+		2, 0, 4
+	};
+	unsigned int squareVAO, squareVBO, squareEBO;
+	glGenVertexArrays(1, &squareVAO);
+	glBindVertexArray(squareVAO);
+	glGenBuffers(1, &squareVBO);
+	glBindBuffer(GL_ARRAY_BUFFER, squareVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(square), square, GL_STATIC_DRAW);
+	glGenBuffers(1, &squareEBO);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, squareEBO);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+	glEnableVertexAttribArray(1);
+
 	// load models
 	// -----------
 	Model ourModel("resources/objects/nanosuit/nanosuit.obj");
@@ -229,10 +263,10 @@ int main() {
 		// world transformation
 		glm::mat4 model = glm::mat4(1.0f);
 		//model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // translate it down so it's at the center of the scene
-		model = glm::translate(model, glm::vec3(0.0f, -1.75f - 1.0f * abs(sin(glfwGetTime() / 2)), 0.0f)); // translate it down so it's at the center of the scene
-		model = glm::rotate(model, (float)glfwGetTime() / 2, glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.0f, -1.75f - 0.25f * abs(sin(glfwGetTime() / 2)), 0.0f)); // translate it down so it's at the center of the scene
+		model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
 		//model = glm::scale(model, glm::vec3(0.2f)); // it's a bit too big for our scene, so scale it down
-		model = glm::scale(model, glm::vec3(0.2f - 0.08f * abs(sin(glfwGetTime() / 2)))); // it's a bit too big for our scene, so scale it down
+		model = glm::scale(model, glm::vec3(0.2f - 0.2f * abs(sin(glfwGetTime() / 2)))); // it's a bit too big for our scene, so scale it down
 		ourShader.setMat4("model", model);
 
 		// render the loaded model
@@ -252,6 +286,16 @@ int main() {
 			lampShader.setMat4("model", model);
 			glDrawArrays(GL_TRIANGLES, 0, 36);
 		}
+
+		squareShader.use();
+		squareShader.setMat4("projection", projection);
+		squareShader.setMat4("view", view); // -1.0f, -2.0f, -1.0f
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, glm::vec3(0.0f, -2.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(1.8f));
+		squareShader.setMat4("model", model);
+		glBindVertexArray(squareVAO);
+		glDrawElements(GL_TRIANGLES, 12, GL_UNSIGNED_INT, 0);
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
 		// -------------------------------------------------------------------------------
