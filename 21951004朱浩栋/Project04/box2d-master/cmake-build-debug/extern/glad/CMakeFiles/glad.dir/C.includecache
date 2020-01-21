@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../extern/glad/include/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+../extern/glad/include/glad/gl.h
+winapifamily.h
+-
+KHR/khrplatform.h
+-
+
+C:/box2d-master/extern/glad/src/gl.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+glad/gl.h
+-
+

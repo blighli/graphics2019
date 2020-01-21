@@ -1,0 +1,1 @@
+-IC:/box2d-master/samples -IC:/box2d-master/src/../include -IC:/box2d-master/extern/glfw/include -IC:/box2d-master/extern/imgui/.. -IC:/box2d-master/extern/sajson/.. -IC:/box2d-master/extern/glad/include 

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glfw"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\tests\;CMake Files\extern\;CMake Files\extern\glad\;CMake Files\extern\glfw\;CMake Files\extern\imgui\;CMake Files\extern\sajson\;CMake Files\samples\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/glfw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/glfw/libglfw.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/glfw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/glfw/libglfw.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/glfw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/box2d-master/extern/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/osmesa_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/wgl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/wgl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glad/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\glad\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\glfw\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\imgui\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/sajson/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\sajson\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\samples\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

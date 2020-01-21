@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="box2d"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\tests\;CMake Files\extern\;CMake Files\extern\glad\;CMake Files\extern\glfw\;CMake Files\extern\imgui\;CMake Files\extern\sajson\;CMake Files\samples\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/box2d-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/box2d-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/box2d-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="box2d">
+				<Option output="C:/box2d-master/cmake-build-debug/src/libbox2d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="C:/box2d-master/src"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 box2d"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="box2d/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/src/libbox2d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="C:/box2d-master/src"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 box2d/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="C:/box2d-master/cmake-build-debug/tests/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/tests/test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glad">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/glad/libglad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/glad"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/glad/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 glad"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glad/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/glad/libglad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/glad"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/glad/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 glad/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glad/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/glfw/libglfw.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/glfw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/glfw/libglfw.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/glfw"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="imgui">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/imgui/libimgui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/imgui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/imgui/.."/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 imgui"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="imgui/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/extern/imgui/libimgui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/extern/imgui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/extern/imgui/.."/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 imgui/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/extern/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="samples">
+				<Option output="C:/box2d-master/cmake-build-debug/samples/samples.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/samples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/samples"/>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="C:/box2d-master/extern/imgui/.."/>
+					<Add directory="C:/box2d-master/extern/sajson/.."/>
+					<Add directory="C:/box2d-master/extern/glad/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 samples"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="samples/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/samples/samples.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/samples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/samples"/>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="C:/box2d-master/extern/imgui/.."/>
+					<Add directory="C:/box2d-master/extern/sajson/.."/>
+					<Add directory="C:/box2d-master/extern/glad/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 samples/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/box2d-master/extern/glad/include/KHR/khrplatform.h">
+			<Option target="glad"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glad/include/glad/gl.h">
+			<Option target="glad"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glad/src/gl.c">
+			<Option target="glad"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/osmesa_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/wgl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/wgl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/win32_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imconfig.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imgui.cpp">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imgui.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imgui_demo.cpp">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imgui_draw.cpp">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imgui_internal.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imgui_widgets.cpp">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imstb_rectpack.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imstb_textedit.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/imstb_truetype.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_block_allocator.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_body.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_broad_phase.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_chain_shape.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_circle_shape.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_collision.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_contact_manager.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_distance.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_distance_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_draw.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_dynamic_tree.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_edge_shape.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_fixture.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_friction_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_gear_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_growable_stack.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_math.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_motor_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_mouse_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_polygon_shape.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_prismatic_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_pulley_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_revolute_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_rope.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_rope_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_settings.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_shape.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_stack_allocator.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_time_of_impact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_time_step.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_timer.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_weld_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_wheel_joint.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_world.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/b2_world_callbacks.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/include/box2d/box2d.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/data/DroidSans.ttf">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/draw.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/draw.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_glfw.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_glfw.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_opengl3.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_opengl3.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/main.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/settings.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/settings.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/test.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/add_pair.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/apply_forces.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/body_types.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/box_stack.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/breakable.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/bridge.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/bullet_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/cantilever.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/car.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/chain.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/chain_problem.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/character_collision.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/circle_stack.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/collision_filtering.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/collision_processing.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/compound_shapes.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/confined.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/continuous_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/convex_hull.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/conveyor_belt.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/distance_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/distance_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/dominos.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/dump_loader.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/dynamic_tree.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/edge_shapes.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/edge_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/friction.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/gear_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/heavy1.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/heavy2.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/mobile_balanced.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/mobile_unbalanced.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/motor_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/pinball.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/platformer.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/polygon_collision.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/polygon_shapes.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/prismatic_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/pulley_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/pyramid.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/ray_cast.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/restitution.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/revolute_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/rope.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/rope_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/sensor.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/shape_cast.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/shape_editing.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/skier.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/slider_crank_1.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/slider_crank_2.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/theo_jansen.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/tiles.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/time_of_impact.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/tumbler.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_broad_phase.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_chain_shape.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_circle_shape.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_collide_circle.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_collide_edge.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_collide_polygon.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_collision.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_distance.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_dynamic_tree.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_edge_shape.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_polygon_shape.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/collision/b2_time_of_impact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/common/b2_block_allocator.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/common/b2_draw.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/common/b2_math.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/common/b2_settings.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/common/b2_stack_allocator.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/common/b2_timer.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_body.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_chain_circle_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_chain_circle_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_chain_polygon_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_chain_polygon_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_circle_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_circle_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_contact_manager.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_contact_solver.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_contact_solver.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_distance_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_edge_circle_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_edge_circle_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_edge_polygon_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_edge_polygon_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_fixture.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_friction_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_gear_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_island.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_island.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_motor_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_mouse_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_polygon_circle_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_polygon_circle_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_polygon_contact.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_polygon_contact.h">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_prismatic_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_pulley_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_revolute_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_rope_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_weld_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_wheel_joint.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_world.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/dynamics/b2_world_callbacks.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/rope/b2_rope.cpp">
+			<Option target="box2d"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/tests/hello_world.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glad/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\glad\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\glfw\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\imgui\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/sajson/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\sajson\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\samples\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

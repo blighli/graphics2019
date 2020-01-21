@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="samples"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\tests\;CMake Files\extern\;CMake Files\extern\glad\;CMake Files\extern\glfw\;CMake Files\extern\imgui\;CMake Files\extern\sajson\;CMake Files\samples\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/box2d-master/cmake-build-debug/samples"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="samples">
+				<Option output="C:/box2d-master/cmake-build-debug/samples/samples.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/samples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/samples"/>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="C:/box2d-master/extern/imgui/.."/>
+					<Add directory="C:/box2d-master/extern/sajson/.."/>
+					<Add directory="C:/box2d-master/extern/glad/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 samples"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="samples/fast">
+				<Option output="C:/box2d-master/cmake-build-debug/samples/samples.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/box2d-master/cmake-build-debug/samples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/box2d-master/samples"/>
+					<Add directory="C:/box2d-master/src/../include"/>
+					<Add directory="C:/box2d-master/extern/glfw/include"/>
+					<Add directory="C:/box2d-master/extern/imgui/.."/>
+					<Add directory="C:/box2d-master/extern/sajson/.."/>
+					<Add directory="C:/box2d-master/extern/glad/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../include/c++/8.2.0/backward"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw_16\mingw\bin\../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 samples/fast"/>
+					<CompileFile command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw_16/MinGW/bin/mingw32-make.exe -f &quot;C:/box2d-master/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/box2d-master/samples/data/DroidSans.ttf">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/draw.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/draw.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_glfw.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_glfw.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_opengl3.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/imgui_impl_opengl3.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/main.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/settings.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/settings.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/test.h">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/add_pair.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/apply_forces.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/body_types.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/box_stack.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/breakable.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/bridge.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/bullet_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/cantilever.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/car.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/chain.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/chain_problem.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/character_collision.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/circle_stack.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/collision_filtering.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/collision_processing.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/compound_shapes.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/confined.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/continuous_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/convex_hull.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/conveyor_belt.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/distance_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/distance_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/dominos.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/dump_loader.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/dynamic_tree.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/edge_shapes.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/edge_test.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/friction.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/gear_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/heavy1.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/heavy2.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/mobile_balanced.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/mobile_unbalanced.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/motor_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/pinball.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/platformer.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/polygon_collision.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/polygon_shapes.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/prismatic_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/pulley_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/pyramid.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/ray_cast.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/restitution.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/revolute_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/rope.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/rope_joint.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/sensor.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/shape_cast.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/shape_editing.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/skier.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/slider_crank_1.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/slider_crank_2.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/theo_jansen.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/tiles.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/time_of_impact.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/tests/tumbler.cpp">
+			<Option target="samples"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glad/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\glad\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\glfw\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/imgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\imgui\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/extern/sajson/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\extern\sajson\"/>
+		</Unit>
+		<Unit filename="C:/box2d-master/samples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\samples\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
