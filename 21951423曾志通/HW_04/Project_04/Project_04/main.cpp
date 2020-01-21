@@ -249,6 +249,11 @@ int main() {
 	ourShader.setInt("texture", 0);
 	//glActiveTexture(GL_TEXTURE0); // default 0
 
+	for (int i = 0; i < 3; ++i, std::cout << std::endl)
+		for (int j = 0; j < 3; ++j, std::cout << std::endl)
+			for (int k = 0; k < 3; ++k)
+				std::cout << cubeOfLocation[i][j][k] << ":(" << cubePositions[i * 9 + j * 3 + k].x << "," << cubePositions[i * 9 + j * 3 + k].y << "," << cubePositions[i * 9 + j * 3 + k].z << " ";
+
 	// Render loop
 	// -----------
 	while (!glfwWindowShouldClose(window)) {
@@ -283,9 +288,10 @@ int main() {
 		if (isRotating)
 			++stepsOfRotation;
 
-		for (unsigned int i = 0; i < 27; ++i) {
+		for (unsigned int i = /*20*/0; i < /*21*/27; ++i) {
 			int cubeID = cubeOfLocation[i / 9][i / 3 % 3][i % 3];
-
+			//int cubeID = 20;
+			
 			glm::mat4 model = glm::mat4(1.0f);
 			/**** ROTATE IT ****/
 			//if (i / 9 == 2) {
@@ -295,6 +301,10 @@ int main() {
 				model = rotDiff * rotMatOfCube[cubeID];
 				if (stepsOfRotation == maxSteps)
 					rotMatOfCube[cubeID] = model;
+				// debuge ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+				//std::cout << cubeOfLocation[i / 9][i / 3 % 3][i % 3] << std::endl;
+				//std::cout << cubeID << std::endl;
+				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			} else {
 				model = rotMatOfCube[cubeID];
 			}
@@ -321,8 +331,16 @@ int main() {
 			stepsOfRotation = 0;
 			isRotating = false;
 			transformCubeOfLocation();
-			memset(rotatingCube, sizeof(rotatingCube), false);
+			/*memset(rotatingCube, sizeof(rotatingCube), false);*/
+			for (int i = 0; i < 3; ++i)
+				for (int j = 0; j < 3; ++j)
+					for (int k = 0; k < 3; ++k)
+						rotatingCube[i * 9 + j * 3 + k] = false;
+			//---------------------------------
 			rotateFlag = -1;
+			// debug-----------------------------------------------------------------------
+			std::cout << std::endl;
+			// debug-----------------------------------------------------------------------
 		}
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
@@ -364,9 +382,41 @@ void processInput(GLFWwindow* window) {
 	//	shiftLock = true;
 	//	//std::cout << "LEFT_SHIFT" << std::endl;
 	//}
+	if (glfwGetKey(window, GLFW_KEY_0) == GLFW_PRESS && !isRotating) {
+		isRotating = true;
+		rotateFlag = 0;
+		markLocation2Rotate();
+		//directionOfRotation = 1;
+		//directionOfRotation = shiftLock ? -1 : 1;
+		//shiftLock = false;
+	}
 	if (glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS && !isRotating) {
 		isRotating = true;
 		rotateFlag = 1;
+		markLocation2Rotate();
+		//directionOfRotation = 1;
+		//directionOfRotation = shiftLock ? -1 : 1;
+		//shiftLock = false;
+	}
+	if (glfwGetKey(window, GLFW_KEY_2) == GLFW_PRESS && !isRotating) {
+		isRotating = true;
+		rotateFlag = 2;
+		markLocation2Rotate();
+		//directionOfRotation = 1;
+		//directionOfRotation = shiftLock ? -1 : 1;
+		//shiftLock = false;
+	}
+	if (glfwGetKey(window, GLFW_KEY_3) == GLFW_PRESS && !isRotating) {
+		isRotating = true;
+		rotateFlag = 3;
+		markLocation2Rotate();
+		//directionOfRotation = 1;
+		//directionOfRotation = shiftLock ? -1 : 1;
+		//shiftLock = false;
+	}
+	if (glfwGetKey(window, GLFW_KEY_4) == GLFW_PRESS && !isRotating) {
+		isRotating = true;
+		rotateFlag = 4;
 		markLocation2Rotate();
 		//directionOfRotation = 1;
 		//directionOfRotation = shiftLock ? -1 : 1;
@@ -464,17 +514,34 @@ unsigned int loadTexture(const char* path) {
 // cubeOfLocation[i][j][k] = i * 9 + j * 3 + k;
 void markLocation2Rotate() {
 	
-	if (rotateFlag == 0) {
-
-	}
-	if (rotateFlag == 1 && directionOfRotation == -1) { // change cubeOfLocation[:][:][2]
-		int k = 2;
+	if (rotateFlag == 0) { // change cubeOfLocation[:][:][0]
 		for (int i = 0; i < 3; ++i)
 			for (int j = 0; j < 3; ++j) {
-				cacheOfLocation[i][j] = cubeOfLocation[i][j][k];
-				rotatingCube[i * 9 + j * 3 + k] = true;
+				cacheOfLocation[i][j] = cubeOfLocation[i][j][0];
+				rotatingCube[i * 9 + j * 3 + 0] = true;
 			}
+	}
+	if (rotateFlag == 1 && directionOfRotation == -1) { // change cubeOfLocation[:][:][2]
+		//-------------
+		std::cout << "-----------" << std::endl;
+		//-------------
+		//int k = 2;
+		for (int i = 0; i < 3; ++i, std::cout << std::endl)
+			for (int j = 0; j < 3; ++j) {
+				cacheOfLocation[i][j] = cubeOfLocation[i][j][2];
+				rotatingCube[i * 9 + j * 3 + 2] = true;
+				// -------------------------
+				std::cout << i * 9 + j * 3 + 2 << " ";
+			}
+		//-------------
+		int cnt = 0;
+		for (int i = 0; i < 3; ++i)
+			for (int j = 0; j < 3; ++j)
+				for (int k = 0; k < 3; ++k)
+					cnt += rotatingCube[i * 9 + j * 3 + k];
+		std::cout << "rotating number:" << cnt << std::endl;
 
+		std::cout << "-----------" << std::endl;
 		//cubeOfLocation[0][0][k] = cacheOfLocation[0][2];
 		//cubeOfLocation[2][0][k] = cacheOfLocation[0][0];
 		//cubeOfLocation[2][2][k] = cacheOfLocation[2][0];
@@ -485,23 +552,68 @@ void markLocation2Rotate() {
 		//cubeOfLocation[1][2][k] = cacheOfLocation[2][1];
 		//cubeOfLocation[0][1][k] = cacheOfLocation[1][2];
 	}
-	if (rotateFlag == 2) {
-
+	if (rotateFlag == 2) { // change cubeOfLocation[:][0][:]
+		for (int i = 0; i < 3; ++i)
+			for (int j = 0; j < 3; ++j) {
+				cacheOfLocation[i][j] = cubeOfLocation[i][0][j];
+				rotatingCube[i * 9 + 0 * 3 + j] = true;
+			}
 	}
-	if (rotateFlag == 3) {
+	if (rotateFlag == 3 && directionOfRotation == -1) { // change cubeOfLocation[:][2][:]
+		//-------------
+		std::cout << "-----------" << std::endl;
+		//-------------
+		for (int i = 0; i < 3; ++i, std::cout << std::endl)
+			for (int j = 0; j < 3; ++j) {
+				cacheOfLocation[i][j] = cubeOfLocation[i][2][j];
+				rotatingCube[i * 9 + 2 * 3 + j] = true;
+				// -------------------------
+				std::cout << i * 9 + 2 * 3 + j << " ";
+			}
+		//-------------
+		int cnt = 0;
+		for (int i = 0; i < 3; ++i)
+			for (int j = 0; j < 3; ++j)
+				for (int k = 0; k < 3; ++k)
+					cnt += rotatingCube[i * 9 + j * 3 + k];
+		std::cout << "rotating number:" << cnt << std::endl;
 
+		std::cout << "-----------" << std::endl;
 	}
-	if (rotateFlag == 4) {
-
+	if (rotateFlag == 4) { // change cubeOfLocation[0][:][:]
+		for (int i = 0; i < 3; ++i)
+			for (int j = 0; j < 3; ++j) {
+				cacheOfLocation[i][j] = cubeOfLocation[0][i][j];
+				rotatingCube[0 * 9 + i * 3 + j] = true;
+			}
 	}
 	if (rotateFlag == 5 && directionOfRotation == -1) { // change cubeOfLocation[2][:][:]
-		int i = 2;
-		for (int j = 0; j < 3; ++j)
-			for (int k = 0; k < 3; ++k) {
-				cacheOfLocation[i][j] = cubeOfLocation[i][j][k];
-				rotatingCube[i * 9 + j * 3 + k] = true;
+		//-------------
+		std::cout << "-----------" << std::endl;
+		//-------------
+		//int i = 2;
+		for (int i = 0; i < 3; ++i, std::cout << std::endl)
+			for (int j = 0; j < 3; ++j) {
+				cacheOfLocation[i][j] = cubeOfLocation[2][i][j];
+				rotatingCube[2 * 9 + i * 3 + j] = true;
+				// -------------------------
+				std::cout << 2 * 9 + i * 3 + j << " ";
 			}
+		//-------------
+		int cnt = 0;
+		for (int i = 0; i < 3; ++i)
+			for (int j = 0; j < 3; ++j)
+				for (int k = 0; k < 3; ++k)
+					cnt += rotatingCube[i * 9 + j * 3 + k];
+		std::cout << "rotating number:" << cnt << std::endl;
 
+		std::cout << "-----------" << std::endl;
+		
+		//--debug------------------------------------------------------------------------
+		//std::cout << "-----------" << std::endl;
+		//
+		//std::cout << "-----------" << std::endl;
+		//--debug------------------------------------------------------------------------
 		//cubeOfLocation[i][0][0] = cacheOfLocation[0][2];
 		//cubeOfLocation[i][2][0] = cacheOfLocation[0][0];
 		//cubeOfLocation[i][2][2] = cacheOfLocation[2][0];
@@ -515,52 +627,84 @@ void markLocation2Rotate() {
 }
 
 void transformCubeOfLocation() {
-	if (rotateFlag == 0) {
+	if (rotateFlag == 0) { // change cubeOfLocation[:][:][0]
+		cubeOfLocation[0][0][0] = cacheOfLocation[2][0];// [0][2];
+		cubeOfLocation[2][0][0] = cacheOfLocation[2][2];// [0][0];
+		cubeOfLocation[2][2][0] = cacheOfLocation[0][2];// [2][0];
+		cubeOfLocation[0][2][0] = cacheOfLocation[0][0];// [2][2];
 
+		cubeOfLocation[1][0][0] = cacheOfLocation[2][1];// [0][1];
+		cubeOfLocation[2][1][0] = cacheOfLocation[1][2];// [1][0];
+		cubeOfLocation[1][2][0] = cacheOfLocation[0][1];// [2][1];
+		cubeOfLocation[0][1][0] = cacheOfLocation[1][0];// [1][2];
 	}
 	if (rotateFlag == 1 && directionOfRotation == -1) { // change cubeOfLocation[:][:][2]
-		int k = 2;
+		//int k = 2;
 		//for (int i = 0; i < 3; ++i)
 		//	for (int j = 0; j < 3; ++j) {
 		//		cacheOfLocation[i][j] = cubeOfLocation[i][j][k];
 		//		rotatingCube[i * 9 + j * 3 + k] = true;
 		//	}
 
-		cubeOfLocation[0][0][k] = cacheOfLocation[0][2];
-		cubeOfLocation[2][0][k] = cacheOfLocation[0][0];
-		cubeOfLocation[2][2][k] = cacheOfLocation[2][0];
-		cubeOfLocation[0][2][k] = cacheOfLocation[2][2];
+		cubeOfLocation[0][0][2] = cacheOfLocation[0][2];
+		cubeOfLocation[2][0][2] = cacheOfLocation[0][0];
+		cubeOfLocation[2][2][2] = cacheOfLocation[2][0];
+		cubeOfLocation[0][2][2] = cacheOfLocation[2][2];
 
-		cubeOfLocation[1][0][k] = cacheOfLocation[0][1];
-		cubeOfLocation[2][1][k] = cacheOfLocation[1][0];
-		cubeOfLocation[1][2][k] = cacheOfLocation[2][1];
-		cubeOfLocation[0][1][k] = cacheOfLocation[1][2];
+		cubeOfLocation[1][0][2] = cacheOfLocation[0][1];
+		cubeOfLocation[2][1][2] = cacheOfLocation[1][0];
+		cubeOfLocation[1][2][2] = cacheOfLocation[2][1];
+		cubeOfLocation[0][1][2] = cacheOfLocation[1][2];
 	}
-	if (rotateFlag == 2) {
+	if (rotateFlag == 2) { // change cubeOfLocation[:][0][:]
+		cubeOfLocation[0][0][0] = cacheOfLocation[0][2];
+		cubeOfLocation[2][0][0] = cacheOfLocation[0][0];
+		cubeOfLocation[2][0][2] = cacheOfLocation[2][0];
+		cubeOfLocation[0][0][2] = cacheOfLocation[2][2];
 
+		cubeOfLocation[1][0][0] = cacheOfLocation[0][1];
+		cubeOfLocation[2][0][1] = cacheOfLocation[1][0];
+		cubeOfLocation[1][0][2] = cacheOfLocation[2][1];
+		cubeOfLocation[0][0][1] = cacheOfLocation[1][2];
 	}
-	if (rotateFlag == 3) {
+	if (rotateFlag == 3 && directionOfRotation == -1) { // change cubeOfLocation[:][2][:]
+		cubeOfLocation[0][2][0] = cacheOfLocation[2][0];// [0][2];
+		cubeOfLocation[2][2][0] = cacheOfLocation[2][2];// [0][0];
+		cubeOfLocation[2][2][2] = cacheOfLocation[0][2];// [2][0];
+		cubeOfLocation[0][2][2] = cacheOfLocation[0][0];// [2][2];
 
+		cubeOfLocation[1][2][0] = cacheOfLocation[2][1];// [0][1];
+		cubeOfLocation[2][2][1] = cacheOfLocation[1][2];// [1][0];
+		cubeOfLocation[1][2][2] = cacheOfLocation[0][1];// [2][1];
+		cubeOfLocation[0][2][1] = cacheOfLocation[1][0];// [1][2];
 	}
-	if (rotateFlag == 4) {
+	if (rotateFlag == 4) { // change cubeOfLocation[0][:][:]
+		cubeOfLocation[0][0][0] = cacheOfLocation[2][0];// [0][2];
+		cubeOfLocation[0][2][0] = cacheOfLocation[2][2];// [0][0];
+		cubeOfLocation[0][2][2] = cacheOfLocation[0][2];// [2][0];
+		cubeOfLocation[0][0][2] = cacheOfLocation[0][0];// [2][2];
 
+		cubeOfLocation[0][1][0] = cacheOfLocation[2][1];// [0][1];
+		cubeOfLocation[0][2][1] = cacheOfLocation[1][2];// [1][0];
+		cubeOfLocation[0][1][2] = cacheOfLocation[0][1];// [2][1];
+		cubeOfLocation[0][0][1] = cacheOfLocation[1][0];// [1][2];
 	}
 	if (rotateFlag == 5 && directionOfRotation == -1) { // change cubeOfLocation[2][:][:]
-		int i = 2;
+		//int i = 2;
 		//for (int j = 0; j < 3; ++j)
 		//	for (int k = 0; k < 3; ++k) {
 		//		cacheOfLocation[i][j] = cubeOfLocation[i][j][k];
 		//		rotatingCube[i * 9 + j * 3 + k] = true;
 		//	}
 
-		cubeOfLocation[i][0][0] = cacheOfLocation[0][2];
-		cubeOfLocation[i][2][0] = cacheOfLocation[0][0];
-		cubeOfLocation[i][2][2] = cacheOfLocation[2][0];
-		cubeOfLocation[i][0][2] = cacheOfLocation[2][2];
+		cubeOfLocation[2][0][0] = cacheOfLocation[0][2];
+		cubeOfLocation[2][2][0] = cacheOfLocation[0][0];
+		cubeOfLocation[2][2][2] = cacheOfLocation[2][0];
+		cubeOfLocation[2][0][2] = cacheOfLocation[2][2];
 
-		cubeOfLocation[i][1][0] = cacheOfLocation[0][1];
-		cubeOfLocation[i][2][1] = cacheOfLocation[1][0];
-		cubeOfLocation[i][1][2] = cacheOfLocation[2][1];
-		cubeOfLocation[i][0][1] = cacheOfLocation[1][2];
+		cubeOfLocation[2][1][0] = cacheOfLocation[0][1];
+		cubeOfLocation[2][2][1] = cacheOfLocation[1][0];
+		cubeOfLocation[2][1][2] = cacheOfLocation[2][1];
+		cubeOfLocation[2][0][1] = cacheOfLocation[1][2];
 	}
 }
