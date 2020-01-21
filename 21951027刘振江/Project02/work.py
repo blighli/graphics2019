@@ -2,13 +2,18 @@ from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
 import time
+import numpy as np
+from PIL import Image
 
 
 global sun_rotate, earth_rorate, moon_rotate
+global sun_texture, earth_texture, moon_texture
 
 
 def init():
     global sun_rotate, earth_rorate, moon_rotate
+    global sun_texture, earth_texture, moon_texture
+    sun_texture, earth_texture, moon_texture = 1, 2, 3
     sun_rotate, earth_rorate, moon_rotate = 0, 0, 0
     mat_spectual = [1.0, 1.0, 1.0, 1.0]
     light_position = [1.0, 1.0, 1.0, 0.0]
@@ -16,6 +21,7 @@ def init():
     Light_Model_Ambient = [0.2, 0.2, 0.2, 1.0]
     white_light = [1.0, 1.0, 1.0, 1.0]
     glClearColor(0.0, 0.0, 0.0, 0.0)
+    load_texture()
     glShadeModel(GL_SMOOTH)
     glMaterialfv(GL_FRONT, GL_SPECULAR, mat_spectual)
     glMaterialfv(GL_FRONT, GL_SHININESS, mat_shiness)
@@ -23,10 +29,50 @@ def init():
     glLightfv(GL_LIGHT0, GL_DIFFUSE, white_light)
     glLightfv(GL_LIGHT0, GL_SPECULAR, white_light)
     glLightModelfv(GL_LIGHT_MODEL_AMBIENT, Light_Model_Ambient)
+    glEnable(GL_TEXTURE_2D)
+    glEnable(GL_CULL_FACE)
+    glFrontFace(GL_CCW)
     glEnable(GL_COLOR_MATERIAL)
+    glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE)
     glEnable(GL_LIGHTING)
     glEnable(GL_LIGHT0)
     glEnable(GL_DEPTH_TEST)
+
+
+def load_texture():
+    global sun_texture, earth_texture, moon_texture
+    glGenTextures(1, sun_texture)
+    sun = Image.open("sunmap.tga")
+    # sun.show()
+    sun_data = np.array(list(sun.getdata()), dtype=np.uint8)
+    glBindTexture(GL_TEXTURE_2D, sun_texture)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, sun.size[0], sun.size[1], 0, GL_RGB, GL_UNSIGNED_BYTE, sun_data)
+
+    glGenTextures(1, moon_texture)
+    moon = Image.open("moonmap.tga")
+    # moon.show()
+    moon_data = np.array(list(moon.getdata()), dtype=np.uint8)
+    glBindTexture(GL_TEXTURE_2D, moon_texture)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, moon.size[0], moon.size[1], 0, GL_LUMINANCE, GL_UNSIGNED_BYTE, moon_data)
+
+    glGenTextures(1, earth_texture)
+    earth = Image.open("earthmap.tga")
+    # earth.show()
+    earth_data = np.array(list(earth.getdata()), dtype=np.uint8)
+    glBindTexture(GL_TEXTURE_2D, earth_texture)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, earth.size[1], earth.size[0], 0, GL_RGB, GL_UNSIGNED_BYTE, earth_data)
 
 
 def reshape(width, height):
@@ -54,21 +100,22 @@ def display():
 
     # 设置太阳
     glRotatef(sun_rotate, 0.0, 0.0, 1.0)
-    glColor3f(1.0, 0.0, 0.0)
+    glBindTexture(GL_TEXTURE_2D, sun_texture)
     glutSolidSphere(0.6, 30, 30)
+
 
     # 设置地球
     glPopMatrix()
     glPushMatrix()
     glRotatef(earth_rorate, 0.0, 0.0, 1.0)
+    glBindTexture(GL_TEXTURE_2D, earth_texture)
     glTranslatef(0.0, -1.8, 0.0)
-    glColor3f(0.0, 0.0, 1.0)
     glutSolidSphere(0.4, 30, 30)
 
     # 设置月球
     glRotatef(moon_rotate, 0.0, 0.0, 1.0)
+    glBindTexture(GL_TEXTURE_2D, moon_texture)
     glTranslatef(0.0, 0.5, 0.0)
-    glColor3f(0.0, 1.0, 0)
     glutSolidSphere(0.1, 30, 30)
 
     glutPostRedisplay()

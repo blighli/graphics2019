@@ -13,7 +13,7 @@ def drawFunc():
     glClear(GL_COLOR_BUFFER_BIT)
     glRotatef(0.1, 5, 5, 0)
     glutWireTeapot(0.5)
-    glutWireTeapot(0.5)
+    # 刷新显示
     glFlush()
 
 
