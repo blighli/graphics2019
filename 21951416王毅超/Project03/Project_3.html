@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>H3 - 场景-视点 </title>
+    <!-- <script src="./clock.js"></script> -->
+    <script type="text/javascript" src="./js/three.js"></script>
+    <script type="text/javascript" src="./js/TGALoader.js"></script>
+    <script type="text/javascript" src="./js/MTLLoader.js"></script>
+    <script type="text/javascript" src="./js/TrackballControls.js"></script>
+    <script type="text/javascript" src="./js/PointerLockControls.js"></script>
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <script type="text/javascript" src="./js/stats.min.js"></script>
+    <script type="text/javascript" src="./js/OBJLoader.js"></script>
+    <script type="text/javascript" src="./js/DDSLoader.js"></script>
+    <!-- <script type="text/javascript" src="./js/OBJMTLLoader.js"></script> -->
+    <script type="text/javascript" src="./js/FirstPersonControls.js"></script>
+    <style>
+    	body {
+		    /* set margin to 0 and overflow to hidden, to go fullscreen */
+		    margin: 0;
+		    overflow: hidden;
+		}
+	    #Choose-object{
+		    position: absolute;
+		    top:0px;
+		    right: 20px;
+		    background-color: #261742;
+		    opacity: 1;
+		    padding: 12px;
+		    font-size: 15px;
+		    color: rgb(0,255,255);
+		    /*text-decoration-color: white;*/
+		}
+		#remainder{
+		    position: absolute;
+		    top:0px;
+		    left: 150px;
+		    background-color: #261742;
+		    opacity:18;
+		    /*opacity: 1;*/
+		    padding: 12px;
+		    font-size: 15px;
+		    color: rgb(0,255,255);
+		    line-height: 25px
+		    /*text-decoration-color: white;*/
+		}
+		#change{
+		    position: absolute;
+		    top:0px;
+		    left: 900px;
+		    background-color: #261742;
+		    opacity:18;
+		    /*opacity: 1;*/
+		    padding: 12px;
+		    font-size: 15px;
+		    color: rgb(0,255,255);
+		    line-height: 25px
+		    /*text-decoration-color: white;*/
+		}
+		#control{
+			/*font-c*/
+			margin:2px;
+			color: rgb(0,255,255);
+			/*border:solid 1px;*/
+			text-decoration: underline;
+			text-decoration: bold;
+		}
+    </style>
+</head>
+<body>
+	<div id = "remainder">
+        <div>按键盘"Q"键，切换视点查看方式: TrackballControl/FirstPersonControl</div>
+    </div>
+    <div id = "change">
+        <span>当前查看方式： </span>
+        <span id = "control">TrackballControl</span>
+        <span id = "content"> 以模型为中心的平移旋转和缩放 </span>
+
+    </div>
+	<div id="Stats-output"></div>
+	<div id="Choose-object">点击天体
+	</div>
+	<div id="WebGL-output">
+	</div>
+
+<!-- Javascript code that runs our Three.js examples -->
+<script type="text/javascript">
+	// once everything is loaded, we run our Three.js stuff.
+    function init() {
+
+        var stats = initStats();
+        var clock = new THREE.Clock();
+        var scene = new THREE.Scene();
+        scene.background = new THREE.Color( 0xbfd1e5 );
+        // scene.fog = new THREE.Fog( scene.background, 1, 5000 );
+        // Fog( color : Integer, near : Float, far : Float )
+        // scene.fog = new THREE.Fog( 0xcce0ff, 600, 6000 );
+
+        // create a camera, which defines where we're looking at.
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 500000);
+        camera.position.x = 500;
+        camera.position.y = 500;
+        camera.position.z = 3000;
+
+        // create a render and set the size
+        var webGLRenderer = new THREE.WebGLRenderer({antialias: true});
+        // 有点像设置背景的颜色
+        webGLRenderer.setSize(window.innerWidth, window.innerHeight);
+        webGLRenderer.shadowMapEnabled = true;
+        document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
+
+        // 第一人控制
+        var camControls = new THREE.FirstPersonControls(camera);
+        camControls.lookSpeed = 0.1;
+        camControls.movementSpeed = 100;
+        // camControls.noFly = false;
+        // camControls.lookVertical = true;
+        // camControls.constrainVertical = true;
+        // camControls.verticalMin = 1.0;
+        // camControls.verticalMax = 2.0;
+        // camControls.lon = -150;
+        // camControls.lat = 120;
+
+        
+        
+        // 控制旋转
+        var trackballControls = new THREE.TrackballControls(camera,webGLRenderer.domElement);
+        trackballControls.rotateSpeed = 1.0;
+        trackballControls.zoomSpeed = 1.0;
+        trackballControls.panSpeed = 1.0;
+        trackballControls.staticMoving = true;
+        // trackballControls.object = webGLRenderer.domElement;
+
+        // 光照-全局光
+        var ambientLight = new THREE.AmbientLight(0x999999,1.1);
+        scene.add(ambientLight);
+
+        // // // add spotlight for the shadows
+        var spotLight = new THREE.SpotLight(0xffffff);
+        spotLight.position.set(-300, 700, 300);
+        spotLight.intensity = 3;
+        spotLight.castShadow = true;
+        spotLight.distance = 4000;
+        scene.add(spotLight);
+
+        // 添加周边环境光，从天空颜色到地面颜色渐变
+        // hemiLight = new THREE.HemisphereLight( 0xddeeff, 0xffffff, 1);
+        // scene.add( hemiLight );
+
+        // add the output of the renderer to the html element
+        
+        
+        let loader = new THREE.TGALoader();
+        // // 添加太阳发光体：
+        var geomSun= new THREE.SphereGeometry(10, 10, 20);
+        let sunLight = new THREE.PointLight( 0xffee88, 5, 5000, 1 );
+       
+        let sunTexture = loader.load('./textures/sunmap.tga');
+
+        var sunMaterial = new THREE.MeshStandardMaterial( {
+                    emissive: 0xffee88,
+                    emissiveIntensity: 0.2,
+                    emissiveMap:sunTexture,
+                    color: 0x000000
+                } );
+        sunLight.add( new THREE.Mesh( geomSun, sunMaterial ) );
+        sunLight.position.set( -300, 650, 300 );
+        sunLight.castShadow = true;
+        // scene.add( sunLight );
+
+        var manager = new THREE.LoadingManager();
+
+        var onError = function () { };
+        var onProgress = function ( xhr ) {
+			if ( xhr.lengthComputable ) {
+				var percentComplete = xhr.loaded / xhr.total * 100;
+				console.log( Math.round( percentComplete, 2 ) + '% downloaded' );
+			}
+		};
+
+        var manager = new THREE.LoadingManager();
+
+		new THREE.MTLLoader(manager)
+			.setPath('./models/fallingWater/')
+			.load( 'FallingWater.mtl', function ( materials ) {
+				materials.preload();
+				new THREE.OBJLoader( manager )
+					.setMaterials( materials )
+					.setPath( './models/fallingWater/' )
+					.load( 'FallingWater.obj', function ( object ) {
+						// object.position.y = - 95;
+						object.scale.set(1, 1, 1);
+						object.rotation.y = -0.5 * Math.PI;
+						object.position.y = -200;
+						// object.castShadow = true;
+						object.receiveShadow = true;
+						scene.add( object );
+					}, onProgress, onError );
+			} );
+
+        // 添加小平面
+        var planeGeometry = new THREE.PlaneGeometry(600, 600, 1, 1);
+        var planeMaterial = new THREE.MeshLambertMaterial({color: 0xaaaaaa});
+        var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+        plane.receiveShadow = true;
+        plane.castShadow = true;
+        plane.rotation.x = -0.5 * Math.PI;
+        plane.position.x = 0;
+        plane.position.y = 550;
+        plane.position.z = 0;
+        // scene.add(plane);
+
+        // 添加总体平面
+        var planeGeometry = new THREE.PlaneGeometry(60000, 60000, 1, 1);
+        var planeMaterial = new THREE.MeshLambertMaterial({color: 0xaaaaaa});
+        var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+        plane.receiveShadow = true;
+        plane.castShadow = true;
+        plane.castShadow = true;
+        plane.rotation.x = -0.5 * Math.PI;
+        plane.position.x = 0;
+        plane.position.y = -400;
+        plane.position.z = 0;
+        scene.add(plane);
+
+        // create a cube
+        var cubeGeometry = new THREE.BoxGeometry(40, 40, 40);
+        var cubeMaterial = new THREE.MeshLambertMaterial({color: 0xff0000});
+        var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+        cube.castShadow = true;
+
+        // position the cube
+        cube.position.x =0;
+        cube.position.y = 600;
+        // scene.add(cube);
+
+        // 添加地球：
+        var geomEarth= new THREE.SphereGeometry(50, 100, 100);
+        let earthTexture = loader.load('./textures/earthmap.tga');
+        var earthMaterial = new THREE.MeshLambertMaterial();
+        earthMaterial.map = earthTexture;
+        var sphereEarth = new THREE.Mesh(geomEarth, earthMaterial);
+        sphereEarth.position.x = 150;
+        sphereEarth.position.y = 600;
+        sphereEarth.castShadow = true;
+        scene.add(sphereEarth);
+
+        // 添加月球：
+        var geomMoon = new THREE.SphereGeometry(25, 50, 50);
+        let moonTexture = loader.load('./textures/moonmap.tga');
+        var moonMaterial = new THREE.MeshLambertMaterial();
+        moonMaterial.map = moonTexture;
+        var sphereMoon = new THREE.Mesh(geomMoon, moonMaterial);
+        sphereMoon.position.x = 300;
+        sphereMoon.position.y = 600;
+        sphereMoon.castShadow = true;
+        scene.add(sphereMoon);
+
+        //添加事件显示：
+        var raycaster = new THREE.Raycaster();
+        var mouse = new THREE.Vector2();
+        window.addEventListener( 'click', onDocumentMouseClick, false );
+        function onDocumentMouseClick( event ) {
+            // 下面这个是阻止事件冒泡吗？
+            event.preventDefault();
+            mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+            mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+            raycaster.setFromCamera( mouse, camera );
+            var intersects = raycaster.intersectObjects( [sphereEarth ,sunLight, sphereMoon],true);
+            console.log("children",intersects.length);
+            if ( intersects.length > 0 ) {
+                let info='';
+                for(let i=0;i<intersects.length;i++){
+                    let singleInfo;
+                    var object = intersects[i].object;
+                    console.log("object",object,[sphereEarth, sunLight.children[0] , sphereMoon]);
+                    switch(object){
+                        case sphereEarth:
+                            console.log("地球");
+                            singleInfo = "地球"
+                            break;
+                        case sunLight.children[0]:
+                            console.log("太阳");
+                            singleInfo = "太阳"
+                            break;
+                        case sphereMoon:
+                            console.log("月球");
+                            singleInfo = "月球"
+                            break;
+                    }
+                    // render();
+                    info+="/"+singleInfo+" ";
+                }
+                showElementsName(info);
+            }
+        }
+
+        // 控制自转、公转速度
+        var earthStep = 0;
+        var moonStep = 0;
+        var sunStep = 0;
+        var spotStep = 0;
+        var controls = new function () {
+            this.sunRotationSpeed = 0.02;
+            this.earthRotationSpeed = 0.02;
+            this.moonRotationSpeed = 0.04;
+            this.sunBouncingSpeed = 0.02;
+            this.earthBouncingSpeed = 0.02;
+            this.moonBouncingSpeed = 0.02;
+        };
+        var Axis = new THREE.Vector3( 1, 4, 0 );
+        var nAxis = Axis.normalize();
+        console.log("axis",Axis,nAxis);
+        render();
+
+        // 查看方式切换
+        trackballControls.enabled = true;
+    	camControls.enabled = false;
+        let flag = true;
+        let switchMenu = document.getElementById("control");
+        let contentMenu = document.getElementById("content");
+        // 查看方式切换函数
+        var onKeyDown = function ( event ) {
+        	console.log("event.keyCode",event.keyCode);
+        	if(event.keyCode==81){
+        		console.log("按下Q键");
+        		if(flag==true){
+        			trackballControls.enabled = false;
+    				camControls.enabled = true;
+    				switchMenu.innerHTML = "FirstPersonControl";
+    				contentMenu.innerHTML = "以视点为中心的场景漫游";
+    				// camera.position.x = 80;
+			     //    camera.position.y = 180;
+			     //    camera.position.z = 300;
+
+			        // camera.lookAt(new THREE.Vector3(80, 180, -300));
+    				flag=false;
+        		}else{
+        			trackballControls.enabled = true;
+    				camControls.enabled = false;
+    				switchMenu.innerHTML = "TrackballControl";
+    				contentMenu.innerHTML = "以模型为中心的平移旋转和缩放";
+    				camera.position.x = 500;
+			        camera.position.y = 500;
+			        camera.position.z = 3000;
+    				flag = true;
+        		}
+        	}
+        };
+        document.addEventListener( 'keydown', onKeyDown, false );
+        
+
+        function render() {
+        	stats.update();
+
+            // 太阳发光体自转
+            sunLight.rotateOnAxis(nAxis,0.04);
+            sunLight.rotation.y += controls.sunRotationSpeed; 
+
+            // spot光源转圈
+            spotStep += controls.sunBouncingSpeed;
+            spotLight.position.x = 1000 * (Math.cos(sunStep));
+            spotLight.position.z = 1000 * (Math.sin(sunStep)); 
+
+            // 太阳光源公转
+            sunStep += controls.sunBouncingSpeed;
+            sunLight.position.x = 1000 * (Math.cos(sunStep));
+            sunLight.position.z = 1000 * (Math.sin(sunStep));    
+
+            // 地球自转 sphereEarth
+            // sphereEarth.rotation.y += controls.earthRotationSpeed;
+            sphereEarth.rotateOnAxis(nAxis,0.05);
+
+            // 地球公转 sphereEarth
+            earthStep += controls.earthBouncingSpeed;
+            sphereEarth.position.x = 1000 * (Math.cos(earthStep));
+            sphereEarth.position.z = 1000 * (Math.sin(earthStep));
+
+            // 月球自转 sphereMoon
+            sphereMoon.rotation.y += controls.moonBouncingSpeed;
+
+            // 月球公转 sphereMoon
+            moonStep += controls.moonBouncingSpeed;
+            sphereMoon.position.x = sphereEarth.position.x + 150 * (Math.cos(moonStep));
+            sphereMoon.position.z = sphereEarth.position.z + 150 * (Math.sin(moonStep));
+
+            trackballControls.update();
+
+            var delta = clock.getDelta();
+            camControls.update(delta);
+
+            // gui.update();
+            webGLRenderer.clear();
+            // render using requestAnimationFrame
+            webGLRenderer.render(scene, camera)
+            requestAnimationFrame(render);
+        }
+        
+        let showSquare = document.getElementById("Choose-object");
+        function showElementsName(str) {
+            showSquare.innerHTML = "从近到远点击物品为： "+str;
+            setTimeout(function(){
+                showSquare.innerHTML = "点击天体";
+            },2000)
+        }
+
+        function initStats() {
+
+            var stats = new Stats();
+            stats.setMode(0); // 0: fps, 1: ms
+            // Align top-left
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+            document.getElementById("Stats-output").appendChild(stats.domElement);
+
+            return stats;
+        }
+    }
+    window.onload = init;
+</script>
+</body>
+</html>
