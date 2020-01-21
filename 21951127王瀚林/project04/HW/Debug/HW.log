@@ -1,0 +1,10 @@
+﻿  main.cpp
+main.obj : error LNK2019: 无法解析的外部符号 __imp__glewInit@0，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwInit，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，该符号在函数 _main 中被引用
+main.obj : error LNK2001: 无法解析的外部符号 __imp__glewExperimental
+D:\data\git\cpplib\Libs\glfw3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+D:\data\git\cpplib\Libs\glew.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+D:\data\git\openglHW\HW\Debug\HW.exe : fatal error LNK1120: 6 个无法解析的外部命令
