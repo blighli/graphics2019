@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!578992689 &1
+DynamicBoneManager:
+  m_ObjectHideFlags: 0
+  serializedVersion: 1
+  m_Enabled: 1
+  m_DistanceDisable: 0
+  m_RestoreEnabled: 1
+  m_ReferenceObject: {fileID: 0}
+  m_DistanceToObject: 500
+  m_DistanceCheckFPS: 20
+  m_RestoringCoeff: 0.05
+  m_BatchSize: 10
+  m_FrameTime: 0.016666668
+  m_FPSLimitEnabled: 0
+  m_GlobalWindEnabled: 0
+  m_GlobalWindLevel: 0
+  m_WindType: 2
+  m_GlobalWindDirection: {x: 1, y: 0, z: 0}
+  m_WindDescTemplate:
+  - power: 0.15
+    fluctuation: 0.7
+    TBFrequency: 0
+    TBIntensity: 0
+  - power: 0.4
+    fluctuation: 0.5
+    TBFrequency: 1.5
+    TBIntensity: 0.8
