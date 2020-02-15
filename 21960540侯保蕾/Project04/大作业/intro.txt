@@ -1,0 +1,8 @@
+吃豆子小游戏
+
+Ubuntu 16.04
+
+在src下，由makefile。
+cd src
+make
+可在bin下生成可执行文件
